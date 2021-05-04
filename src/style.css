@@ -1,0 +1,40 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: #ff9100;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1111px;
+  width: 100%;
+  padding: 0 15px;
+
+  margin: 0 auto;
+}
+
+/* fonts */
+@font-face {
+	font-family: 'Lobster';
+	src: url('fonts/Lobster-Regular.eot');
+	src: local('☺'), url('fonts/Lobster-Regular.woff') format('woff'), url('fonts/Lobster-Regular.ttf') format('truetype'), url('fonts/Lobster-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
