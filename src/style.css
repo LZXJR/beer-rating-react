@@ -26,7 +26,6 @@ span {
   max-width: 1111px;
   width: 100%;
   padding: 0 15px;
-
   margin: 0 auto;
 }
 
@@ -160,11 +159,13 @@ h1 {
 .rating_title_item {
   background-color: white;
   color: #ff9100;
-  padding: 5px 0 5px 3px;
+  padding: 8px 0 8px 3px;
   border-right: 3px solid #ff9100;
+  margin-bottom: 10px;
   
 }
 .rating_title_item:nth-of-type(1) {
+  text-align: center;
   border-radius: 8px 0 0 8px;
   width: 10%;
 }
@@ -177,4 +178,46 @@ h1 {
 .rating_title_item:nth-of-type(4) {
   border-radius: 0 8px 8px 0px;
   width: 20%;
+  border: 0;
+
+}
+
+/* Rating */
+.rating_item{
+  display: flex;
+  border-radius:8px 8px; 
+  background-color: rgba(255, 255, 255, .8);
+
+  margin-bottom: 10px;
+}
+
+.rating_item_inner{
+  padding: 8px 0 8px 3px; 
+  border-right: 3px solid #ff9100;
+  cursor: pointer;
+}
+
+.rating_item_inner:nth-of-type(1) {
+  text-align: center;
+  width: 10%;
+}
+.rating_item_inner:nth-of-type(2) {
+  width: 40%;
+}
+.rating_item_inner:nth-of-type(3) {
+  width: 30%;
+}
+.rating_item_inner:nth-of-type(4) {
+  display: flex;
+  justify-content: center;
+  border: 0;
+  width: 20%;
+}
+
+.rating_star{
+  width: 13px;
+  margin-right: 3px;
+}
+.rating_star:last-child{
+  margin: 0;
 }

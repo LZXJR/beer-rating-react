@@ -1,3 +1,5 @@
+import Rating from '../components/Rating'
+
 const Main = () => {
   return (
     <div className="container">
@@ -8,6 +10,7 @@ const Main = () => {
               <div className="rating_title_item">Producer</div>
               <div className="rating_title_item">Grade</div>
           </div>
+          <Rating/>
       </main>
     </div>
   );
