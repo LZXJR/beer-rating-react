@@ -1,0 +1,18 @@
+{
+    "logIn":"Увійти",
+    "signUp":"Зареєструватись",
+
+    "nav":{
+        "navItemOne":"Кабінет",
+        "navItemTwo":"Випадкове пиво",
+        "navItemThree":"Про нас",
+        "navItemFour":"Підтримати проект",
+        "navItemFive":"Контакти"
+    },
+    "ratingTitle":{
+        "name":"Назва",
+        "producer":"Фабрика",
+        "grade":"Оцінка",
+        "country":"Країна"
+    }
+}

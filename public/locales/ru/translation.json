@@ -1,0 +1,18 @@
+{
+    "logIn":"Войти",
+    "signUp":"Регистрация",
+
+    "nav":{
+        "navItemOne":"Кабинет",
+        "navItemTwo":"Случайное пиво",
+        "navItemThree":"О нас",
+        "navItemFour":"Поддержать проект",
+        "navItemFive":"Контакты"
+    },
+    "ratingTitle":{
+        "name":"Название",
+        "producer":"Фабрика",
+        "grade":"Оценка",
+        "country":"Страна"
+    }
+}

@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import beersIcon from "../img/header/beersIcon.svg";
 import searchIcon from "../img/header/searchIcon.svg";
 
 const Header = () => {
+const {t}=useTranslation()
+
   return (
     <header>
       <div className="container">
@@ -19,9 +22,9 @@ const Header = () => {
             <img src={searchIcon} alt="search" className="search_icon"></img>
 
             <div className="logIn_SignUp">
-            <a href="#">Log in</a>
+            <a href="#">{t("logIn")}</a>
               <span> | </span>
-              <a href="#">Sign up</a>
+              <a href="#">{t("signUp")}</a>
             </div>
           </div>
         </div>

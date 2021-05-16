@@ -7,6 +7,7 @@ const Rating = () => {
         <div className="rating_item_inner place">1</div>
         <div className="rating_item_inner name">Stella Artois</div>
         <div className="rating_item_inner producer">Anheuser-Busch InBev</div>
+        <div className="rating_item_inner country">Бельгія</div>
         <div className="rating_item_inner grade">
           <img src={ratingStart} alt="star" className="rating_star"></img>
           <img src={ratingStart} alt="star" className="rating_star"></img>
@@ -20,6 +21,7 @@ const Rating = () => {
         <div className="rating_item_inner place">1</div>
         <div className="rating_item_inner name">Stella Artois</div>
         <div className="rating_item_inner producer">Anheuser-Busch InBev</div>
+        <div className="rating_item_inner country">Бельгія</div>
         <div className="rating_item_inner grade">
           <img src={ratingStart} alt="star" className="rating_star"></img>
           <img src={ratingStart} alt="star" className="rating_star"></img>
@@ -33,6 +35,7 @@ const Rating = () => {
         <div className="rating_item_inner place">1</div>
         <div className="rating_item_inner name">Stella Artois</div>
         <div className="rating_item_inner producer">Anheuser-Busch InBev</div>
+        <div className="rating_item_inner country">Бельгія</div>
         <div className="rating_item_inner grade">
           <img src={ratingStart} alt="star" className="rating_star"></img>
           <img src={ratingStart} alt="star" className="rating_star"></img>
@@ -46,6 +49,7 @@ const Rating = () => {
         <div className="rating_item_inner place">1</div>
         <div className="rating_item_inner name">Stella Artois</div>
         <div className="rating_item_inner producer">Anheuser-Busch InBev</div>
+        <div className="rating_item_inner country">Бельгія</div>
         <div className="rating_item_inner grade">
           <img src={ratingStart} alt="star" className="rating_star"></img>
           <img src={ratingStart} alt="star" className="rating_star"></img>
@@ -59,6 +63,7 @@ const Rating = () => {
         <div className="rating_item_inner place">1</div>
         <div className="rating_item_inner name">Stella Artois</div>
         <div className="rating_item_inner producer">Anheuser-Busch InBev</div>
+        <div className="rating_item_inner country">Бельгія</div>
         <div className="rating_item_inner grade">
           <img src={ratingStart} alt="star" className="rating_star"></img>
           <img src={ratingStart} alt="star" className="rating_star"></img>
@@ -72,6 +77,7 @@ const Rating = () => {
         <div className="rating_item_inner place">1</div>
         <div className="rating_item_inner name">Stella Artois</div>
         <div className="rating_item_inner producer">Anheuser-Busch InBev</div>
+        <div className="rating_item_inner country">Бельгія</div>
         <div className="rating_item_inner grade">
           <img src={ratingStart} alt="star" className="rating_star"></img>
           <img src={ratingStart} alt="star" className="rating_star"></img>
@@ -85,6 +91,7 @@ const Rating = () => {
         <div className="rating_item_inner place">1</div>
         <div className="rating_item_inner name">Stella Artois</div>
         <div className="rating_item_inner producer">Anheuser-Busch InBev</div>
+        <div className="rating_item_inner country">Бельгія</div>
         <div className="rating_item_inner grade">
           <img src={ratingStart} alt="star" className="rating_star"></img>
           <img src={ratingStart} alt="star" className="rating_star"></img>
@@ -98,6 +105,7 @@ const Rating = () => {
         <div className="rating_item_inner place">1</div>
         <div className="rating_item_inner name">Stella Artois</div>
         <div className="rating_item_inner producer">Anheuser-Busch InBev</div>
+        <div className="rating_item_inner country">Бельгія</div>
         <div className="rating_item_inner grade">
           <img src={ratingStart} alt="star" className="rating_star"></img>
           <img src={ratingStart} alt="star" className="rating_star"></img>
@@ -111,6 +119,7 @@ const Rating = () => {
         <div className="rating_item_inner place">1</div>
         <div className="rating_item_inner name">Stella Artois</div>
         <div className="rating_item_inner producer">Anheuser-Busch InBev</div>
+        <div className="rating_item_inner country">Бельгія</div>
         <div className="rating_item_inner grade">
           <img src={ratingStart} alt="star" className="rating_star"></img>
           <img src={ratingStart} alt="star" className="rating_star"></img>
@@ -124,6 +133,7 @@ const Rating = () => {
         <div className="rating_item_inner place">1</div>
         <div className="rating_item_inner name">Stella Artois</div>
         <div className="rating_item_inner producer">Anheuser-Busch InBev</div>
+        <div className="rating_item_inner country">Бельгія</div>
         <div className="rating_item_inner grade">
           <img src={ratingStart} alt="star" className="rating_star"></img>
           <img src={ratingStart} alt="star" className="rating_star"></img>
@@ -137,6 +147,7 @@ const Rating = () => {
         <div className="rating_item_inner place">1</div>
         <div className="rating_item_inner name">Stella Artois</div>
         <div className="rating_item_inner producer">Anheuser-Busch InBev</div>
+        <div className="rating_item_inner country">Бельгія</div>
         <div className="rating_item_inner grade">
           <img src={ratingStart} alt="star" className="rating_star"></img>
           <img src={ratingStart} alt="star" className="rating_star"></img>
@@ -150,6 +161,7 @@ const Rating = () => {
         <div className="rating_item_inner place">1</div>
         <div className="rating_item_inner name">Stella Artois</div>
         <div className="rating_item_inner producer">Anheuser-Busch InBev</div>
+        <div className="rating_item_inner country">Бельгія</div>
         <div className="rating_item_inner grade">
           <img src={ratingStart} alt="star" className="rating_star"></img>
           <img src={ratingStart} alt="star" className="rating_star"></img>
@@ -163,6 +175,7 @@ const Rating = () => {
         <div className="rating_item_inner place">1</div>
         <div className="rating_item_inner name">Stella Artois</div>
         <div className="rating_item_inner producer">Anheuser-Busch InBev</div>
+        <div className="rating_item_inner country">Бельгія</div>
         <div className="rating_item_inner grade">
           <img src={ratingStart} alt="star" className="rating_star"></img>
           <img src={ratingStart} alt="star" className="rating_star"></img>
@@ -171,6 +184,21 @@ const Rating = () => {
           <img src={ratingStart} alt="star" className="rating_star"></img>
         </div>
       </div>
+
+      <div className="rating_item">
+        <div className="rating_item_inner place">1</div>
+        <div className="rating_item_inner name">Stella Artois</div>
+        <div className="rating_item_inner producer">Anheuser-Busch InBev</div>
+        <div className="rating_item_inner country">Бельгія</div>
+        <div className="rating_item_inner grade">
+          <img src={ratingStart} alt="star" className="rating_star"></img>
+          <img src={ratingStart} alt="star" className="rating_star"></img>
+          <img src={ratingStart} alt="star" className="rating_star"></img>
+          <img src={ratingStart} alt="star" className="rating_star"></img>
+          <img src={ratingStart} alt="star" className="rating_star"></img>
+        </div>
+      </div>
+
     </div>
   );
 };
