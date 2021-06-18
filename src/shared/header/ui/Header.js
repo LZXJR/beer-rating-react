@@ -1,8 +1,10 @@
 import { useTranslation } from "react-i18next";
-import beersIcon from "../img/header/beersIcon.svg";
-import searchIcon from "../img/header/searchIcon.svg";
+import "./style.css"
 
-const Header = () => {
+import beersIcon from "./img/beersIcon.svg";
+import searchIcon from "./img/searchIcon.svg";
+
+export const Header = () => {
 const {t}=useTranslation()
 
   return (
@@ -33,4 +35,4 @@ const {t}=useTranslation()
   );
 };
 
-export default Header;
+

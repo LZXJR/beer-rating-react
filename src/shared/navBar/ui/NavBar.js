@@ -1,7 +1,10 @@
 import { useTranslation } from "react-i18next";
-import beersIcon from "../img/header/beersIcon.svg";
+import "./style.css";
 
-const NavBar = () => {
+
+import beersIcon from "./img/beersIcon.svg";
+
+export const NavBar = () => {
   const { t,i18n } = useTranslation();
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
@@ -49,4 +52,3 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
