@@ -1,13 +1,9 @@
 {
-    "logIn":"Увійти",
-    "signUp":"Зареєструватись",
-
     "nav":{
         "navItemOne":"Кабінет",
         "navItemTwo":"Випадкове пиво",
         "navItemThree":"Про нас",
-        "navItemFour":"Підтримати проект",
-        "navItemFive":"Контакти"
+        "navItemFour":"Підтримати проект"
     },
     "ratingTitle":{
         "name":"Назва",

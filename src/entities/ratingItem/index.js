@@ -1,1 +1,1 @@
-export {RatingItem} from "./ui/RatingItem"
+export {RatingItem} from "./ui/RatingItem.jsx"

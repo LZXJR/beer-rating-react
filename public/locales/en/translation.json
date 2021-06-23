@@ -1,13 +1,9 @@
 {
-    "logIn":"Log in",
-    "signUp":"Sign up",
-
     "nav":{
         "navItemOne":"My cabinet",
         "navItemTwo":"Random Beer",
         "navItemThree":"About us",
-        "navItemFour":"Donate",
-        "navItemFive":"Contacts"
+        "navItemFour":"Donate"
     },
     "ratingTitle":{
         "name":"Name",

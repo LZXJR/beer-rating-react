@@ -6,6 +6,7 @@ body {
   background-color: #ff9100;
   font-weight: normal;
   font-style: normal;
+  height: 100%;
 }
 *,
 *::after,
@@ -20,6 +21,13 @@ p,
 span {
   margin: 0;
   padding: 0;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
 .container {
@@ -81,11 +89,23 @@ span {
   font-style: normal;
 }
 
-.app{
+#root {
   display: flex;
-  flex-direction: column;
+  height: 100%;
 }
 
+/* media questions */
 
+@media (max-width: 1610px) {
+  html,
+  body {
+    height: 100%;
+  }
+}
 
-
+@media (width: 1024px) and (height:768px) {
+  html,
+  body {
+    height: auto;
+  }
+}

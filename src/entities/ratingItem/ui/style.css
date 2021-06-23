@@ -1,55 +1,29 @@
-
-
-
 .rating_item {
-    display: flex;
-    border-radius: 8px 8px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  border-radius: 8px 8px 8px 8px;
   
-    margin-bottom: 10px;
-  
-    transition: 0.2s ease-in-out;
-  }
-  
-  .rating_item:hover {
-    background-color: rgba(255, 255, 255, 1);
-  }
-  
-  .rating_item_inner {
-    background-color: rgba(255, 255, 255, 0.8);
-  
-    padding: 8px 0 8px 3px;
-  margin-right:3px ;
-    cursor: pointer;
-  }
-  
-  .rating_item_inner:nth-of-type(1) {
-    border-radius: 8px 0 0 8px;
-  
-    text-align: center;
-    width: 10%;
-  }
-  .rating_item_inner:nth-of-type(2) {
-    width: 30%;
-  }
-  .rating_item_inner:nth-of-type(3) {
-    width: 25%;
-  }
-  .rating_item_inner:nth-of-type(4) {
-    width: 15%;
-  }
-  
-  .rating_item_inner:last-child {
-    border-radius: 0 8px 8px 0px;
-    width: 20%;
-    border: 0;
-    margin-right: 0;
-  
-  }
-  
-  .rating_star {
-    width: 13px;
-    margin-right: 3px;
-  }
-  .rating_star:last-child {
-    margin: 0;
-  }
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+.rating_item_inner {
+  color: rgba(0, 0, 0, .8);
+  background-color: rgba(255, 255, 255, .8);
+}
+.rating_item_inner:last-child{
+  display: flex;
+  justify-content: center;
+}
+
+.rating_item:hover{
+  background-color: white;
+}
+
+.rating_star {
+  width: 13px;
+  margin-right: 3px;
+}
+.rating_star:last-child {
+  margin: 0;
+}

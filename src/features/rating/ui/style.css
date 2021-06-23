@@ -1,0 +1,38 @@
+.rating_title,.rating_item {
+  margin-top: 40px;
+
+  display: grid;
+  grid-template-columns: 1fr 4fr 3fr 3fr 3fr;
+  grid-column-gap: 3px;
+
+  margin-bottom: 8px;
+}
+
+.rating_title_item,.rating_item_inner {
+  width: 100%;
+  background-color: white;
+  color: #ff9100;
+  padding: 8px 0 8px 3px;
+  margin-right: 3px;
+}
+.rating_title_item:nth-of-type(1),.rating_item_inner:nth-of-type(1) {
+  text-align: center;
+  border-radius: 8px 0 0 8px;
+}
+
+.rating_title_item:last-child,.rating_item_inner:last-child {
+  border-radius: 0 8px 8px 0px;
+  border: 0;
+  margin-right: 0;
+}
+
+/* Media question */
+
+@media (max-width: 425px) {
+  .rating_title_item:nth-of-type(4),.rating_item_inner:nth-of-type(4) {
+    display: none;
+  }
+  .rating_title,.rating_item {
+    grid-template-columns: 1fr 4fr 3fr 3fr;
+  }
+}

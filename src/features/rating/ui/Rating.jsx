@@ -1,7 +1,5 @@
-import { Children } from "react";
 import { useTranslation } from "react-i18next";
-
-import ratingStart from "../../../entities/ratingItem/ui/img/star.svg";
+import "./style.css"
 
 export const Rating = ({children}) => {
   const {t}=useTranslation()

@@ -1,109 +1,144 @@
 header {
-    background-color: #da7b00;
-  
-    width: 100%;
-    padding: 20px 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #da7b00;
+
+  width: 100%;
+  padding: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: .2s ease-in-out;
+
+}
+
+.header_title {
+  text-decoration: none;
+  display: flex;
+  cursor: pointer;
+
+  transition: .2s ease-in-out;
+}
+
+h1,
+h2 {
+  font-family: Lobster, sans-serif;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px black;
+  font-size: 37px;
+  transform: translateY(4px);
+}
+
+.header_title img {
+  margin-left: 8px;
+  width: 60px;
+  transform: translateY(-7px);
+}
+
+.header_searchbar_And_logIn_SignUp {
+  width: 40%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+}
+.header_searchbar_item {
+  font-family: roboto, sans-serif;
+  padding: 13px 23px 13px 33px;
+  border-radius: 20px;
+
+  border: 0;
+  margin-right: 20px;
+  outline: none;
+
+  transition: .2s ease-in-out;
+}
+
+.header_searchbar_item::placeholder {
+  opacity: 0.5;
+}
+
+.search_icon {
+  position: absolute;
+  width: 11px;
+  left: 12px;
+  top: 15px;
+  transform: rotate(90deg);
+  opacity: 0.5;
+}
+
+.logIn_SignUp {
+  transform: translateX(-10px);
+}
+.logIn_SignUp a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: white;
+}
+.logIn_SignUp a:hover {
+  text-decoration: underline;
+}
+
+.search_button{
+  display: none;
+}
+
+.search_button img {
+  height: 20px;
+}
+
+/* media questions*/
+
+@media (max-width: 2560px) {
+  #header_title {
+    visibility: hidden;
   }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .header_title {
-    display: flex;
-    cursor: pointer;
-  }
-  
-  h1,
-  h2 {
-    font-family: Lobster, sans-serif;
-    color: #ffffff;
-    text-shadow: 1px 1px 2px black;
-    font-size: 37px;
-    transform: translateY(4px);
-  }
-  
-  .header_title img {
-    margin-left: 8px;
-    width: 60px;
-    transform: translateY(-7px);
-  }
-  
+}
+
+@media (max-width: 962px) {
   .header_searchbar_And_logIn_SignUp {
-    width: 40%;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    position: relative;
+    width: auto;
+  }
+}
+
+@media (max-width: 823px) {
+  #header_title {
+    visibility: visible;
+  }
+  .header_searchbar_And_logIn_SignUp {
+    width: auto;
+  }
+}
+
+@media (max-width: 620px) {
+  #logIn_SignUp {
+    display: none;
   }
   .header_searchbar_item {
-    font-family: roboto, sans-serif;
-    padding: 13px 23px 13px 33px;
-    border-radius: 20px;
-  
-    border: 0;
-    outline: none;
+    margin: 0px;
   }
-  
-  .header_searchbar_item::placeholder {
-    opacity: 0.5;
+}
+
+@media (max-width: 500px) {
+  .header_searchbar_item{
+    width: 0px;
+    padding: 0;
   }
-  
-  .search_icon {
-    position: absolute;
-    width: 11px;
-    left: 12px;
-    top: 15px;
-    transform: rotate(90deg);
-    opacity: 0.5;
+
+  .search_button{
+    display: block;
+
   }
-  
-  .logIn_SignUp {
-    transform: translateX(-10px);
+}
+
+@media (max-width: 425px) {
+  .header_title{
+    justify-content: center;
   }
-  .logIn_SignUp a {
-    text-decoration: none;
-    color: white;
-  }
-  .logIn_SignUp a:hover {
-    text-decoration: underline;
-  }
-  
-  /* main */
-  .rating_title {
-    margin-top: 40px;
-    display: flex;
-    width: 100%;
-  }
-  
-  .rating_title_item {
-    background-color: white;
-    color: #ff9100;
-    padding: 8px 0 8px 3px;
-    margin-right:3px ;
-    margin-bottom: 10px;
-  }
-  .rating_title_item:nth-of-type(1) {
-    text-align: center;
-    border-radius: 8px 0 0 8px;
-    width: 10%;
-  }
-  .rating_title_item:nth-of-type(2) {
-    width: 30%;
-  }
-  .rating_title_item:nth-of-type(3) {
-    width: 25%;
-  }
-  .rating_title_item:nth-of-type(4) {
-    width: 15%;
-  }
-  
-  .rating_title_item:last-child {
-    border-radius: 0 8px 8px 0px;
-    width: 20%;
-    border: 0;
-    margin-right: 0;
-  }
+}

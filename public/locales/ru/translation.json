@@ -1,13 +1,9 @@
 {
-    "logIn":"Войти",
-    "signUp":"Регистрация",
-
     "nav":{
         "navItemOne":"Кабинет",
         "navItemTwo":"Случайное пиво",
         "navItemThree":"О нас",
-        "navItemFour":"Поддержать проект",
-        "navItemFive":"Контакты"
+        "navItemFour":"Поддержать проект"
     },
     "ratingTitle":{
         "name":"Название",

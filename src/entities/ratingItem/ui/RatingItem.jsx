@@ -14,7 +14,6 @@ return(
       <img src={ratingStart} alt="star" className="rating_star"/>
       <img src={ratingStart} alt="star" className="rating_star"/>
       <img src={ratingStart} alt="star" className="rating_star"/>
-      <img src={ratingStart} alt="star" className="rating_star"/>
     </div>
   </div>
 )
