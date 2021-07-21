@@ -6,25 +6,25 @@ export const NavBar = () => {
   const [styleForNavBar, setStyleForNavBar] = useState(null);
   const [styleForArrow, setStyleForArrow] = useState(null);
 
-  const IsItMobile = (width) =>width>425?false:true
+  const IsItMobile = (width) => (width > 425 ? false : true);
 
   const switchingNavigation = () => {
     const windowWidth = window.innerWidth;
-    const navigationWidth = IsItMobile(windowWidth)?windowWidth:270
-    const arrowWidth = IsItMobile(windowWidth)?(windowWidth-30):270
+    const navigationWidth = IsItMobile(windowWidth) ? windowWidth : 270;
+    const arrowWidth = IsItMobile(windowWidth) ? windowWidth - 30 : 270;
 
     if (!styleForArrow) {
-      setStyleForNavBar({ width:navigationWidth +"px" });
+      setStyleForNavBar({ width: navigationWidth + "px" });
       setStyleForArrow({
-        left: arrowWidth +"px",
+        left: arrowWidth + "px",
         transform: "rotate(180deg)",
       });
       setStyleForBlackBg({ zIndex: 1, opacity: 1 });
       return;
     } else {
-      setStyleForNavBar(null);
-      setStyleForArrow(null);
-      setStyleForBlackBg(null);
+      setStyleForNavBar(false);
+      setStyleForArrow(false);
+      setStyleForBlackBg(false);
     }
   };
 

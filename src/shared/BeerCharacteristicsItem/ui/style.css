@@ -1,0 +1,65 @@
+/* beer_characteristics */
+  
+.beer_characteristics {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 64.5%;
+  }
+  
+  .beer_characteristics_item {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 75%;
+  }
+  
+  .beer_characteristics_item p {
+      text-transform: capitalize;
+    position: absolute;
+    top: -14%;
+    left: 13%;
+  }
+  .beer_characteristics_item_icon {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .beer_characteristics_item_scale {
+    display: grid;
+    width: 100%;
+    height: 25px;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 3px;
+  
+    margin-bottom: 2px;
+  }
+  .beer_characteristics_item_scale_item {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .beer_characteristics_item_scale_item:first-child {
+    border-radius: 50px 0 0 20px;
+  }
+  .beer_characteristics_item_scale_item:last-child {
+    border-radius: 0 20px 20px 0;
+  }
+  
+  .beer_characteristics_item_scale_item.cost {
+    background-color: rgba(213, 234, 121, 1);
+  }
+  
+  .beer_characteristics_item_scale_item.taste {
+    background-color: rgb(255, 93, 93);
+  }
+  .beer_characteristics_item_scale_item.look {
+    background-color: rgb(128, 170, 255);
+  }
+  .beer_characteristics_item_scale_item.smell {
+    background-color: rgb(255, 222, 213);
+  }
+  .beer_characteristics_item_scale_item.alcohol {
+    background-color: rgb(250, 183, 47);
+  }

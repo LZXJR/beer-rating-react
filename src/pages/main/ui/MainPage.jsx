@@ -4,7 +4,7 @@ import "./style.css"
 import { Header } from "../../../shared/header/Header.jsx";
 import { Main } from "../../../shared/main/index";
 import {Rating} from "../../../features/rating/ui/Rating.jsx";
-import {RatingItem} from "../../../entities/ratingItem/index"
+import {RatingItem} from "../../../shared/ratingItem/index"
 import {NavBar} from "../../../shared/navBar/NavBar.jsx";
 
 export const MainPage = () =>{

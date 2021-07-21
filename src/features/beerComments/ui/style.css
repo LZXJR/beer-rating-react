@@ -1,0 +1,14 @@
+.beerPage_comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    margin-top: 15px;
+    padding: 40px 20px 20px 20px;
+  }
+  
+  .beer_comments {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }

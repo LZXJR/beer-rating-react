@@ -1,0 +1,38 @@
+
+.beer_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    padding: 40px 20px 50px 20px;
+  }
+  
+  .beer_title {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 19px;
+    margin-bottom: 5px;
+  }
+  
+  .beer_hr {
+    width: 90%;
+  }
+  
+  .beer_description_table {
+    margin-top: 15px;
+  
+    display: grid;
+    width: 90%;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: repeat(12, 1fr);
+  }
+  
+  .beer_description_table h4 {
+    height: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 15px 0;
+  }
+  .beer_description_table p,
+  .beer_description_table a {
+    padding: 15px 5px;
+  }

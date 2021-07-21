@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import PropTypes from "prop-types"
 import "./style.css";
 
@@ -7,7 +6,6 @@ import searchIcon from "./img/searchIcon.svg";
 import searchIconWhite from "./img/searchIconWhite.svg";
 
 export const HeaderUi = ({styleForHeader,styleForSearchButton,styleForSearchBar,openSearchBar}) => {
-  const { t } = useTranslation();
 
   return (
     <header >
@@ -42,10 +40,10 @@ export const HeaderUi = ({styleForHeader,styleForSearchButton,styleForSearchBar,
   );
 };
 
-HeaderUi.propTypes={
-  styleForHeader:PropTypes.object.isRequired,
-  styleForSearchButton:PropTypes.object.isRequired,
-  styleForSearchBar:PropTypes.object.isRequired,
-  openSearchBar:PropTypes.func.isRequired,
+// HeaderUi.propTypes={
+//   styleForHeader:PropTypes.object.isRequired,
+//   styleForSearchButton:PropTypes.object.isRequired,
+//   styleForSearchBar:PropTypes.object.isRequired,
+//   openSearchBar:PropTypes.func.isRequired,
 
-}
+// }

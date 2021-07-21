@@ -76,10 +76,10 @@ export const NavBarUi = ({
   );
 };
 
-NavBarUi.propTypes={
-  styleForNavBar:PropTypes.object.isRequired,
-  styleForArrow:PropTypes.object.isRequired,
-  styleForBlackBg:PropTypes.object.isRequired,
-  switchingNavigation:PropTypes.func.isRequired,
+// NavBarUi.propTypes={
+//   styleForNavBar:PropTypes.object.isRequired,
+//   styleForArrow:PropTypes.object.isRequired,
+//   styleForBlackBg:PropTypes.object.isRequired,
+//   switchingNavigation:PropTypes.func.isRequired,
 
-}
+// }

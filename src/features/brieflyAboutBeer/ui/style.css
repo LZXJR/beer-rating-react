@@ -1,0 +1,20 @@
+.briefly_about_beer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.briefly_about_beer_item {
+  width: 59.8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 80px 20px;
+}
+
+.briefly_about_beer_item:nth-child(1) {
+  width: 39.8%;
+  padding: 40px 20px;
+
+}

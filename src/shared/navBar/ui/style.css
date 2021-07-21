@@ -44,7 +44,7 @@ nav {
   margin-bottom: 64px;
 }
 .navBar_main a,
-span {
+.navBar_main span {
   text-decoration: none;
   color: white;
 }
@@ -119,8 +119,8 @@ span {
   }
 }
 
-@media (max-height:770px){
-  nav{
+@media (max-height: 770px) {
+  nav {
     height: auto;
   }
 }

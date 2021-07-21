@@ -85,6 +85,9 @@ h2 {
   text-decoration: underline;
 }
 
+.logIn_SignUp span{
+  color: #ffffff;
+}
 .search_button{
   display: none;
 }
