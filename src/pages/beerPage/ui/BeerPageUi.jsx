@@ -3,7 +3,6 @@ import "./style.css";
 
 import { NavBar } from "../../../shared/navBar/NavBar.jsx";
 import { Header } from "../../../shared/header/Header.jsx";
-// import { Main } from "../../../shared/main/index";
 import { Layout } from "../../../shared/layout/ui/Layout";
 
 import { Button3dUI } from "../../../features/3dButton/ui/Button3dUI";

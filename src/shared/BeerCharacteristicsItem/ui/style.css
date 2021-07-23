@@ -17,7 +17,6 @@
   }
   
   .beer_characteristics_item p {
-      text-transform: capitalize;
     position: absolute;
     top: -14%;
     left: 13%;

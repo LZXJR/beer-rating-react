@@ -1,14 +1,44 @@
 {
-    "nav":{
-        "navItemOne":"My cabinet",
-        "navItemTwo":"Random Beer",
-        "navItemThree":"About us",
-        "navItemFour":"Donate"
-    },
-    "ratingTitle":{
-        "name":"Name",
-        "producer":"Producer",
-        "grade":"Grade",
-        "country":"Country"
+  "nav": {
+    "navItemOne": "My cabinet",
+    "navItemTwo": "Random Beer",
+    "navItemThree": "About us",
+    "navItemFour": "Donate"
+  },
+  "ratingTitle": {
+    "name": "Name",
+    "producer": "Producer",
+    "grade": "Grade",
+    "country": "Country"
+  },
+  "BeerCharacteristicsItem": {
+    "titleCost": "Cost",
+    "titleTaste": "Taste",
+    "titleLook": "Look",
+    "titleSmell": "Smell",
+    "titleAlcoholContent": "Alcohol content"
+  },
+  "BeerDescription": {
+    "title": "DETAILED DESCRIPTION",
+    "BeerDescriptionTable": {
+      "titleCountry": "Country",
+      "titleManufacturer": "Manufacturer",
+      "titleCost": "Cost",
+      "titleSort": "Sort",
+      "titleColor": "Color",
+      "titleFiltration": "Filtration",
+      "titleAlcoholContent": "Alcohol content",
+      "titleDensity": "Density",
+      "titleComposition": "Composition",
+      "titleShelfLife": "Shelf Life",
+      "titleStorageСonditions": "Storage conditions",
+      "titleOfficialSite": "Official site"
     }
+  },
+  "BeerComments": {
+    "title": "COMMENTS",
+    "titleButtonLoadMore": "Load more...",
+    "titleButtonComment": "Comment",
+    "titleButtonCancel": "Cancel"
+  }
 }

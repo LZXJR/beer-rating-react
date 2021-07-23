@@ -1,12 +1,14 @@
+import { useTranslation } from "react-i18next";
 import "./style.css";
 import userPhoto from "./img/user.jpg";
 
 import { BeerComment } from "../../../shared/beerComment/ui/BeerComment";
 
 export const BeerCommentsUI = () => {
+  const { t } = useTranslation();
   return (
     <div className="beerPage_comments  white_bg_and_border_radius">
-      <h3 className="beer_title">COMMENTS</h3>
+      <h3 className="beer_title">{t("BeerComments.title")}</h3>
       <hr className="beer_hr" />
       <div className="beer_comments">
         <BeerComment
@@ -50,7 +52,7 @@ using Lorem Ipsum is that it has a more-or-less normal distribution of
 letters, as opposed to using 'Content here, content here'."
         />
       </div>
-      <button className="load_more">Load more...</button>
+      <button className="load_more">{t("BeerComments.titleButtonLoadMore")}</button>
 
       <div className="beer_comment input">
         <div className="beer_comment_img">
@@ -68,8 +70,8 @@ letters, as opposed to using 'Content here, content here'."
             here'.
           </div>
           <div className="user_comment_input_buttons">
-            <button className="button_cancel">cancel</button>
-            <button className="button_comment">Comment</button>
+            <button className="button_cancel">{t("BeerComments.titleButtonCancel")}</button>
+            <button className="button_comment">{t("BeerComments.titleButtonComment")}</button>
           </div>
         </div>
       </div>
