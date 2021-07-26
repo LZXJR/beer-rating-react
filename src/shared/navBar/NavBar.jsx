@@ -22,9 +22,9 @@ export const NavBar = () => {
       setStyleForBlackBg({ zIndex: 1, opacity: 1 });
       return;
     } else {
-      setStyleForNavBar(false);
-      setStyleForArrow(false);
-      setStyleForBlackBg(false);
+      setStyleForNavBar(null);
+      setStyleForArrow(null);
+      setStyleForBlackBg(null);
     }
   };
 
