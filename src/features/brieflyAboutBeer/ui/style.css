@@ -13,6 +13,9 @@
   padding: 80px 20px;
 }
 
+.briefly_about_beer_photo{
+  z-index: 1;
+}
 .briefly_about_beer_item:nth-child(1) {
   width: 39.8%;
   padding: 40px 20px;
