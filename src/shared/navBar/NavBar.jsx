@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavBarUi } from "./ui/NavBarUi";
 
 export const NavBar = () => {
-  const [styleForBlackBg, setStyleForBlackBg] = useState(null);
+  const [styleForBlackBg, setStyleForBlackBg] = useState({ zIndex: -1, opacity: 0 });
   const [styleForNavBar, setStyleForNavBar] = useState(null);
   const [styleForArrow, setStyleForArrow] = useState(null);
 
@@ -24,7 +24,9 @@ export const NavBar = () => {
     } else {
       setStyleForNavBar(null);
       setStyleForArrow(null);
-      setStyleForBlackBg(null);
+      setStyleForBlackBg({ opacity: 0 }); 
+      //            / \
+      // Here is bug |
     }
   };
 

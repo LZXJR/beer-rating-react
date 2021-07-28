@@ -27,7 +27,7 @@ export const MainPage = () =>{
             <RatingItem place="1" name="Stella Artois" producer="Anheuser-Busch InBev" country="Бельгія"/>
             <RatingItem place="1" name="Stella Artois" producer="Anheuser-Busch InBev" country="Бельгія"/>
             <RatingItem place="1" name="Stella Artois" producer="Anheuser-Busch InBev" country="Бельгія"/>
-            <RatingItem place="1" name="Stella Artois" producer="Anheuser-Busch InBev" country="Бельгія"/>
+
             </Rating>
           </Main>
           </div>

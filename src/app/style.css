@@ -6,7 +6,10 @@ body {
   background-color: #ff9100;
   font-weight: normal;
   font-style: normal;
-  height: 100%;
+}
+
+body {
+  padding-left: 261px;
 }
 *,
 *::after,
@@ -25,7 +28,7 @@ span {
 }
 
 button {
-  font-family:inherit;
+  font-family: inherit;
   background-color: rgba(0, 0, 0, 0);
   border: 0;
   padding: 0;
@@ -65,13 +68,14 @@ button {
 }
 
 @font-face {
-	font-family: 'Conv_Roboto-Light';
-	src: url('fonts/Roboto-Light.eot');
-	src: local('☺'), url('fonts/Roboto-Light.woff') format('woff'), url('fonts/Roboto-Light.ttf') format('truetype'), url('fonts/Roboto-Light.svg') format('svg');
-	font-weight: lighter;
-	font-style: normal;
+  font-family: "Conv_Roboto-Light";
+  src: url("fonts/Roboto-Light.eot");
+  src: local("☺"), url("fonts/Roboto-Light.woff") format("woff"),
+    url("fonts/Roboto-Light.ttf") format("truetype"),
+    url("fonts/Roboto-Light.svg") format("svg");
+  font-weight: lighter;
+  font-style: normal;
 }
-
 
 @font-face {
   font-family: "Roboto";
@@ -107,23 +111,13 @@ button {
   height: 100%;
 }
 
-/* media questions */
-
-@media (max-width: 1610px) {
-  html,
-  body {
-    height: 100%;
-  }
-}
-
-@media (width: 1024px) and (height:768px) {
-  html,
-  body {
-    height: auto;
-  }
-}
-
 .white_bg_and_border_radius {
   background-color: #ffffff;
   border-radius: 40px;
+}
+
+@media (max-width: 824px) {
+  body {
+    padding: 0;
+  }
 }
