@@ -32,3 +32,22 @@
 .user_nickName {
   margin-bottom: 6px;
 }
+
+@media (max-width: 461px) {
+  .user_nickName,
+  .user_comment {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .user_nickName,
+  .user_comment {
+    font-size: 10px;
+  }
+  .beer_comment_img,
+  .beer_comment_img img {
+    height: 30px;
+    min-width: 30px;
+  }
+}

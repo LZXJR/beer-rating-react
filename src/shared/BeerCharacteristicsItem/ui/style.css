@@ -17,15 +17,20 @@
   }
   
   .beer_characteristics_item p {
-    position: absolute;
-    top: -14%;
-    left: 13%;
+   transform: translateX(6px);
   }
   .beer_characteristics_item_icon {
     height: 40px;
     margin-right: 10px;
   }
+ 
   
+  .beer_characteristics_item_scale_and_title{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+  }
   .beer_characteristics_item_scale {
     display: grid;
     width: 100%;
@@ -62,3 +67,9 @@
   .beer_characteristics_item_scale_item.alcohol {
     background-color: rgb(250, 183, 47);
   }
+
+  @media (max-width: 461px){
+    .beer_characteristics_item p {
+      font-size: 12px;
+     }
+  } 

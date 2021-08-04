@@ -19,5 +19,22 @@
 .briefly_about_beer_item:nth-child(1) {
   width: 39.8%;
   padding: 40px 20px;
-
 }
+
+.briefly_about_beer_item:nth-child(2){
+min-height: 608px;
+}
+
+@media (max-width:551px){
+  .briefly_about_beer{
+    flex-direction: column;
+  }
+  .briefly_about_beer_item{
+    width: 100%;
+  }
+  .briefly_about_beer_item:nth-child(1) {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+

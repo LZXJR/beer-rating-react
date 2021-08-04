@@ -1,17 +1,16 @@
 import { useState } from "react";
 import { NavBarUi } from "./ui/NavBarUi";
+import { isItMobile } from "../isItMobile";
 
 export const NavBar = () => {
   const [styleForBlackBg, setStyleForBlackBg] = useState({ zIndex: -1, opacity: 0 });
   const [styleForNavBar, setStyleForNavBar] = useState(null);
   const [styleForArrow, setStyleForArrow] = useState(null);
-
-  const IsItMobile = (width) => (width > 425 ? false : true);
-
+  
   const switchingNavigation = () => {
     const windowWidth = window.innerWidth;
-    const navigationWidth = IsItMobile(windowWidth) ? windowWidth : 270;
-    const arrowWidth = IsItMobile(windowWidth) ? windowWidth - 30 : 270;
+    const navigationWidth = isItMobile(windowWidth) ? windowWidth : 270;
+    const arrowWidth = isItMobile(windowWidth) ? windowWidth - 30 : 270;
 
     if (!styleForArrow) {
       setStyleForNavBar({ width: navigationWidth + "px" });
@@ -19,14 +18,12 @@ export const NavBar = () => {
         left: arrowWidth + "px",
         transform: "rotate(180deg)",
       });
-      setStyleForBlackBg({ zIndex: 1, opacity: 1 });
+      setStyleForBlackBg({ zIndex: 2, opacity: 1 });
       return;
     } else {
       setStyleForNavBar(null);
       setStyleForArrow(null);
       setStyleForBlackBg({ opacity: 0 }); 
-      //            / \
-      // Here is bug |
     }
   };
 

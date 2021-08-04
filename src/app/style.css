@@ -116,8 +116,21 @@ button {
   border-radius: 40px;
 }
 
+.beer_title {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+
 @media (max-width: 824px) {
   body {
     padding: 0;
+  }
+}
+
+@media (max-width: 461px) {
+  .beer_title {
+    font-size: 17px;
   }
 }
