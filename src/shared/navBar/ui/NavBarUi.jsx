@@ -1,16 +1,14 @@
 import { useTranslation } from "react-i18next";
 import PropTypes from "prop-types"
-
 import "./style.css";
 
 import beersIcon from "./img/beersIcon.svg";
 import arrow from "./img/arrow.svg";
 
 export const NavBarUi = ({
-  styleForNavBar,
-  styleForArrow,
-  styleForBlackBg,
+  styleForNavBarOptions,
   switchingNavigation,
+  choosingLanguageStyles
 }) => {
   const { t, i18n } = useTranslation();
   const changeLanguage = (language) => {
@@ -19,17 +17,17 @@ export const NavBarUi = ({
 
   return (
     <>
-      <div className="black_bg" style={styleForBlackBg}></div>
+      <div className="black_bg" style={styleForNavBarOptions.blackBackground}></div>
 
       <button
         className="open_navBar"
-        style={styleForArrow}
+        style={styleForNavBarOptions.arrow}
         onClick={() => switchingNavigation()}
       >
         <img src={arrow} alt="arrow" />
       </button>
 
-      <nav style={styleForNavBar}>
+      <nav style={styleForNavBarOptions.navBarWidth}>
         
         <header className="navBar_container navBar_header_bgcolor">
           <div className="nav_header">
@@ -58,9 +56,10 @@ export const NavBarUi = ({
             </ul>
 
             <div className="languages">
-              <button onClick={() => changeLanguage("ua")}>UA</button>
-              <button onClick={() => changeLanguage("en")}>EN</button>
-              <button onClick={() => changeLanguage("ru")}>RU</button>
+              <button  style={styleForNavBarOptions.ua} onClick={(event) =>{changeLanguage("ua");choosingLanguageStyles(event)}}>UA</button>
+              <button  style={styleForNavBarOptions.en} onClick={(event) =>{changeLanguage("en");choosingLanguageStyles(event)}}>EN</button>
+              <button  style={styleForNavBarOptions.ru} onClick={(event) =>{changeLanguage("ru");choosingLanguageStyles(event)}}>RU</button>
+             
             </div>
 
             <div className="logIn_SignUp logIn_SignUp_NavBar">

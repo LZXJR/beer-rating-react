@@ -97,6 +97,7 @@ nav {
 
 .black_bg {
   z-index: -1;
+  opacity: 0;
   position: fixed;
   height: 100%;
   width: 100%;

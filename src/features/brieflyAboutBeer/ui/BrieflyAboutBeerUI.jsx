@@ -6,7 +6,6 @@ import "./style.css";
 import beerPhoto from "./img/stella-beer.png";
 
 export const BrieflyAboutBeerUI = () => {
-  const windowWidth = window.innerWidth;
   const { t } = useTranslation();
   return (
     <>

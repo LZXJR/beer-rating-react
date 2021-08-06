@@ -1,38 +1,76 @@
 import { useState } from "react";
 import { NavBarUi } from "./ui/NavBarUi";
 import { isItMobile } from "../isItMobile";
+import { changeOptions } from "../../shared/changeOptions";
 
 export const NavBar = () => {
-  const [styleForBlackBg, setStyleForBlackBg] = useState({ zIndex: -1, opacity: 0 });
-  const [styleForNavBar, setStyleForNavBar] = useState(null);
-  const [styleForArrow, setStyleForArrow] = useState(null);
-  
+  const [styleForNavBarOptions, setStyleForNavBarOptions] = useState({
+    blackBackground: null,
+    navBarWidth: null,
+    arrow: null,
+    ua: null,
+    en: { border: 0, fontSize: "16px" },
+    ru: null,
+  });
+
   const switchingNavigation = () => {
     const windowWidth = window.innerWidth;
     const navigationWidth = isItMobile(windowWidth) ? windowWidth : 270;
     const arrowWidth = isItMobile(windowWidth) ? windowWidth - 30 : 270;
+    const isNavBarOpen = styleForNavBarOptions.navBarWidth;
 
-    if (!styleForArrow) {
-      setStyleForNavBar({ width: navigationWidth + "px" });
-      setStyleForArrow({
+    if (isNavBarOpen) {
+      changeOptions(setStyleForNavBarOptions, "navBarWidth", null);
+      changeOptions(setStyleForNavBarOptions, "arrow", null);
+      changeOptions(setStyleForNavBarOptions, "blackBackground", null);
+    } else {
+      changeOptions(setStyleForNavBarOptions, "navBarWidth", {
+        width: navigationWidth + "px",
+      });
+      changeOptions(setStyleForNavBarOptions, "arrow", {
         left: arrowWidth + "px",
         transform: "rotate(180deg)",
       });
-      setStyleForBlackBg({ zIndex: 2, opacity: 1 });
-      return;
-    } else {
-      setStyleForNavBar(null);
-      setStyleForArrow(null);
-      setStyleForBlackBg({ opacity: 0 }); 
+      changeOptions(setStyleForNavBarOptions, "blackBackground", {
+        zIndex: 2,
+        opacity: 1,
+      });
+    }
+  };
+
+  const choosingLanguageStyles = (event) => {
+    const languageIsChoosed = { border: 0, fontSize: "16px" };
+    const buttonId = event.target.outerText.toLowerCase();
+
+    switch (buttonId) {
+      case "ua": {
+        changeOptions(setStyleForNavBarOptions, "ua", languageIsChoosed);
+        changeOptions(setStyleForNavBarOptions, "en", null);
+        changeOptions(setStyleForNavBarOptions, "ru", null);
+        break;
+      }
+      case "en": {
+        changeOptions(setStyleForNavBarOptions, "ua", null);
+        changeOptions(setStyleForNavBarOptions, "en", languageIsChoosed);
+        changeOptions(setStyleForNavBarOptions, "ru", null);
+        break;
+      }
+      case "ru": {
+        changeOptions(setStyleForNavBarOptions, "ua", null);
+        changeOptions(setStyleForNavBarOptions, "en", null);
+        changeOptions(setStyleForNavBarOptions, "ru", languageIsChoosed);
+        break;
+      }
+      default:
+        console.error("Not expected: buttonId")
     }
   };
 
   return (
     <NavBarUi
-      styleForNavBar={styleForNavBar}
-      styleForArrow={styleForArrow}
-      styleForBlackBg={styleForBlackBg}
+      styleForNavBarOptions={styleForNavBarOptions}
       switchingNavigation={switchingNavigation}
+      choosingLanguageStyles={choosingLanguageStyles}
     />
   );
 };
