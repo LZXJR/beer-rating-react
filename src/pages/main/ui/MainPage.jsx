@@ -3,7 +3,7 @@ import "./style.css";
 
 import { Layout } from "../../../shared/layout/ui/Layout";
 import { Header } from "../../../shared/header/Header.jsx";
-import { Rating } from "../../../features/rating/ui/Rating.jsx";
+import { Rating } from "../../../features/rating/Rating.jsx";
 import { NavBar } from "../../../shared/navBar/NavBar.jsx";
 
 export const MainPage = () => {
