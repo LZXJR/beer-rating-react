@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import "./style.css";
 
-import { RatingItem } from "../../../shared/ratingItem/ui/RatingItem";
 
 export const RatingUI = ({ children }) => {
   const { t } = useTranslation();

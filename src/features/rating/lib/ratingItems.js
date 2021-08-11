@@ -1,11 +1,11 @@
-import { RatingItem } from "../../../shared/ratingItem/ui/RatingItem";
+import { RatingItemUI } from "../../../shared/ratingItem/ui/RatingItemUI";
 
 export const ratingItems = (ratingItemsObject) => {
   return ratingItemsObject
     ? ratingItemsObject.map((ratingItem, id) => (
-        <RatingItem
+        <RatingItemUI
           key={id}
-          place={id}
+          place={id+1}
           name={ratingItem.name}
           producer={ratingItem.producer}
           country={ratingItem.country}
