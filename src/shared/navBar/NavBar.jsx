@@ -9,8 +9,8 @@ export const NavBar = () => {
     navBarWidth: null,
     arrow: null,
     ua: null,
-    en: { border: 0, fontSize: "16px" },
-    ru: null,
+    en: null,
+    ru: { border: 0, fontSize: "16px" },
   });
 
   const switchingNavigation = () => {

@@ -7,9 +7,10 @@
   },
   "ratingTitle": {
     "name": "Name",
-    "producer": "Producer",
-    "grade": "Grade",
-    "country": "Country"
+    "color": "Color",
+    "filtration": "Filtration",
+    "fortress":"%",
+    "grade": "Grade"
   },
   "BeerCharacteristicsItem": {
     "titleCost": "Cost",

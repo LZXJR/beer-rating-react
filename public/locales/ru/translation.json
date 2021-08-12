@@ -7,9 +7,11 @@
     },
     "ratingTitle":{
         "name":"Название",
-        "producer":"Фабрика",
-        "grade":"Оценка",
-        "country":"Страна"
+        "color": "Цвет",
+        "filtration": "Фильтрация",
+    "fortress":"%",
+
+        "grade":"Оценка"
     },
     "BeerCharacteristicsItem":{
         "titleCost":"Цена",

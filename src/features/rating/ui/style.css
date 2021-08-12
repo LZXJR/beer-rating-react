@@ -2,7 +2,7 @@
   margin-top: 40px;
 
   display: grid;
-  grid-template-columns: 1fr 4fr 3fr 3fr 3fr;
+  grid-template-columns: 1fr 4fr 2fr 2fr 1fr 3fr;
   grid-column-gap: 3px;
 
   margin-bottom: 8px;
@@ -18,6 +18,10 @@
 .rating_title_item:nth-of-type(1),.rating_item_inner:nth-of-type(1) {
   text-align: center;
   border-radius: 8px 0 0 8px;
+}
+
+.rating_title_item:nth-of-type(5),.rating_item_inner:nth-of-type(5){
+  text-align: center;
 }
 
 .rating_title_item:last-child,.rating_item_inner:last-child {

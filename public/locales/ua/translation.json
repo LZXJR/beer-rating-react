@@ -1,45 +1,46 @@
 {
-    "nav":{
-        "navItemOne":"Кабінет",
-        "navItemTwo":"Випадкове пиво",
-        "navItemThree":"Про нас",
-        "navItemFour":"Підтримати проект"
-    },
-    "ratingTitle":{
-        "name":"Назва",
-        "producer":"Фабрика",
-        "grade":"Оцінка",
-        "country":"Країна"
-    },
-    "BeerCharacteristicsItem":{
-        "titleCost":"Ціна",
-        "titleTaste":"Смак",
-        "titleLook":"Вигляд",
-        "titleSmell":"Запах",
-        "titleAlcoholContent":"Вміст Алкоголю"
-    },
-    "BeerDescription":{
-        "title":"ДЕТАЛЬНИЙ ОПИС",
-        "BeerDescriptionTable":{
-            "titleCountry":"Країна",
-            "titleManufacturer":"Виробник",
-            "titleCost":"Ціна",
-            "titleSort":"Сорт",
-            "titleColor":"Колір",
-            "titleFiltration":"Фільтрація",
-            "titleAlcoholContent":"Вміст Алкоголю",
-            "titleDensity":"Щільність",
-            "titleComposition":"Склад",
-            "titleShelfLife":"Термін придатності",
-            "titleStorageСonditions":"Умови зберігання",
-            "titleOfficialSite":"Офіційний сайт"
+  "nav": {
+    "navItemOne": "Кабінет",
+    "navItemTwo": "Випадкове пиво",
+    "navItemThree": "Про нас",
+    "navItemFour": "Підтримати проект"
+  },
+  "ratingTitle": {
+    "name": "Назва",
+    "color": "Колір",
+    "filtration": "Фільтрація",
+    "fortress": "%",
 
-        }
-    },
-    "BeerComments": {
-        "title": "КОМЕНТАРІ",
-        "titleButtonLoadMore": "Більше",
-        "titleButtonComment": "Коментувати",
-        "titleButtonCancel": "Відмінити"
-      }
+    "grade": "Оцінка"
+  },
+  "BeerCharacteristicsItem": {
+    "titleCost": "Ціна",
+    "titleTaste": "Смак",
+    "titleLook": "Вигляд",
+    "titleSmell": "Запах",
+    "titleAlcoholContent": "Вміст Алкоголю"
+  },
+  "BeerDescription": {
+    "title": "ДЕТАЛЬНИЙ ОПИС",
+    "BeerDescriptionTable": {
+      "titleCountry": "Країна",
+      "titleManufacturer": "Виробник",
+      "titleCost": "Ціна",
+      "titleSort": "Сорт",
+      "titleColor": "Колір",
+      "titleFiltration": "Фільтрація",
+      "titleAlcoholContent": "Вміст Алкоголю",
+      "titleDensity": "Щільність",
+      "titleComposition": "Склад",
+      "titleShelfLife": "Термін придатності",
+      "titleStorageСonditions": "Умови зберігання",
+      "titleOfficialSite": "Офіційний сайт"
+    }
+  },
+  "BeerComments": {
+    "title": "КОМЕНТАРІ",
+    "titleButtonLoadMore": "Більше",
+    "titleButtonComment": "Коментувати",
+    "titleButtonCancel": "Відмінити"
+  }
 }

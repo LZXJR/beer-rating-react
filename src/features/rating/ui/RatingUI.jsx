@@ -9,8 +9,9 @@ export const RatingUI = ({ children }) => {
       <div className="rating_title">
         <div className="rating_title_item">№</div>
         <div className="rating_title_item">{t("ratingTitle.name")}</div>
-        <div className="rating_title_item">{t("ratingTitle.producer")}</div>
-        <div className="rating_title_item">{t("ratingTitle.country")}</div>
+        <div className="rating_title_item">{t("ratingTitle.color")}</div>
+        <div className="rating_title_item">{t("ratingTitle.filtration")}</div>
+        <div className="rating_title_item">{t("ratingTitle.fortress")}</div>
         <div className="rating_title_item">{t("ratingTitle.grade")}</div>
       </div>
       {children}

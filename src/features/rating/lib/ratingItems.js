@@ -7,8 +7,9 @@ export const ratingItems = (ratingItemsObject) => {
           key={id}
           place={id+1}
           name={ratingItem.name}
-          producer={ratingItem.producer}
-          country={ratingItem.country}
+          color={ratingItem.color}
+          filtration={ratingItem.filtration}
+          fortress={ratingItem.fortress}
           grade={ratingItem.grade}
         />
       ))
