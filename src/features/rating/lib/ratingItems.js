@@ -1,4 +1,5 @@
 import { RatingItemUI } from "../../../shared/ratingItem/ui/RatingItemUI";
+import { Download } from "../../../shared/download/ui/Download";
 
 export const ratingItems = (ratingItemsObject) => {
   return ratingItemsObject
@@ -13,9 +14,7 @@ export const ratingItems = (ratingItemsObject) => {
           grade={ratingItem.grade}
         />
       ))
-    : null;
+    : <Download/>;
 };
 
-//    /\
-//    ||
-// Here will be download component
+
