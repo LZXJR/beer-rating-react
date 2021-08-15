@@ -11,7 +11,7 @@ export const HeaderUi = ({styleForHeader,styleForSearchButton,styleForSearchBar,
     <header >
       <div className="container">
         <div className="header" style={styleForHeader}>
-          <a href="#" className="header_title" id="header_title">
+          <a href="/" className="header_title" id="header_title">
             <h1>BeerRating</h1>
             <img src={beersIcon} alt="beers"></img>
           </a>

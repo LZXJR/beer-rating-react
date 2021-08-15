@@ -10,7 +10,7 @@ import { BrieflyAboutBeerUI } from "../../../features/brieflyAboutBeer/ui/Briefl
 import { BeerDescriptionUI } from "../../../features/beerDescription/ui/BeerDescription";
 import { BeerCommentsUI } from "../../../features/beerComments/ui/BeerCommentsUI";
 
-export const BeerPageUi = () => {
+ const BeerPageUi = () => {
 
   return (
     <>
@@ -37,3 +37,5 @@ export const BeerPageUi = () => {
     </>
   );
 };
+
+export default BeerPageUi
