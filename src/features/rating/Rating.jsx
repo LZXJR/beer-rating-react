@@ -1,23 +1,12 @@
-import { useState, useEffect } from "react";
-import { beerRatingApi } from "../../shared/beerRatingApi";
+import { useState } from "react";
 import { RatingUI } from "./ui/RatingUI";
 import { ratingItems } from "./lib/ratingItems";
+import { usePreparingResponse } from "../../shared/usePreparingResponse";
 
 export const Rating = () => {
   const [ratingItemsObject, setRatingItemsObject] = useState(null);
 
-  useEffect(() => {
-      const asyncGetRatingItemsApi = async () => {
-      try {
-        const response = await beerRatingApi("ratingItems");
-        setRatingItemsObject(response.data);
-      } catch (e) {
-        console.error(e);
-      }
-    }
-
-    asyncGetRatingItemsApi();
-  }, []);
+  usePreparingResponse(setRatingItemsObject, "ratingItems");
 
   return <RatingUI>{ratingItems(ratingItemsObject)}</RatingUI>;
 };

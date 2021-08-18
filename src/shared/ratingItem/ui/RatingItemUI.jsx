@@ -1,5 +1,8 @@
 import ratingStar from "./img/star.svg";
+import { setIdInLocalStorage } from "../lib/setIdInLocalStorage";
 import "./style.css";
+
+
 
 export const RatingItemUI = ({
   place,
@@ -8,9 +11,10 @@ export const RatingItemUI = ({
   filtration,
   grade,
   fortress,
+  id
 }) => {
   return (
-    <a className="rating_item" href="/beerPage">
+    <a className="rating_item" href="/beerPage" onClick={()=>setIdInLocalStorage(id)}>
       <div className="rating_item_inner place">{place}</div>
       <div className="rating_item_inner name">{name}</div>
       <div className="rating_item_inner color">{color}</div>
@@ -24,3 +28,4 @@ export const RatingItemUI = ({
     </a>
   );
 };
+

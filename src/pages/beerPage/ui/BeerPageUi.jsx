@@ -1,4 +1,4 @@
-import { Suspense} from "react";
+import {  useState } from "react";
 import "./style.css";
 
 import { NavBar } from "../../../shared/navBar/NavBar.jsx";
@@ -10,32 +10,39 @@ import { BrieflyAboutBeerUI } from "../../../features/brieflyAboutBeer/ui/Briefl
 import { BeerDescriptionUI } from "../../../features/beerDescription/ui/BeerDescription";
 import { BeerCommentsUI } from "../../../features/beerComments/ui/BeerCommentsUI";
 
- const BeerPageUi = () => {
+import { usePreparingResponse } from "../../../shared/usePreparingResponse";
+
+const BeerPageUi = () => {
+  const [beerPageData, setBeerPageData] = useState(null);
+
+  usePreparingResponse(
+    setBeerPageData,
+    "beerPage",
+    localStorage.getItem("beerId")
+  );
 
   return (
     <>
-      <Suspense fallback="Loading...">
-        <NavBar />
-        <div className="header_and_main">
-          <Header />
-          <main>
+      <NavBar />
+      <div className="header_and_main">
+        <Header />
+        <main>
           <Layout>
             <div className="beerPage">
               <div className="beerPage_title_AND_3d_button">
                 <h2 className="beerPage_title">Stella Artois</h2>
-                <Button3dUI/>
+                <Button3dUI />
               </div>
 
               <BrieflyAboutBeerUI />
               <BeerDescriptionUI />
               <BeerCommentsUI />
             </div>
-            </Layout>
-          </main>
-        </div>
-      </Suspense>
+          </Layout>
+        </main>
+      </div>
     </>
   );
 };
 
-export default BeerPageUi
+export default BeerPageUi;

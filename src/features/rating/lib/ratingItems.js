@@ -1,5 +1,5 @@
 import { RatingItemUI } from "../../../shared/ratingItem/ui/RatingItemUI";
-import { Download } from "../../../shared/download/ui/Download";
+import { Loading } from "../../../shared/download/ui/Loading";
 
 export const ratingItems = (ratingItemsObject) => {
   return ratingItemsObject
@@ -12,9 +12,10 @@ export const ratingItems = (ratingItemsObject) => {
           filtration={ratingItem.filtration}
           fortress={ratingItem.fortress}
           grade={ratingItem.grade}
+          id={ratingItem.id}
         />
       ))
-    : <Download/>;
+    : <Loading/>;
 };
 
 
