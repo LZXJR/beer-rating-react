@@ -4,7 +4,12 @@ import { beerRatingApi } from "./beerRatingApi";
 export const usePreparingResponse = (setState, request, id) => {
   useEffect(() => {
     beerRatingApi(request, id)
-      .then((response) => {setState(response.data)})
-      .catch((e) => console.error(e));
-  }, [id,request]);
+      .then((response) => {
+        setState(response);
+      })
+      .catch((error) => {
+        console.error(error);
+        setState(error.response)
+      });
+  }, [id, request,setState]);
 };

@@ -2,11 +2,12 @@ import { useState } from "react";
 import { RatingUI } from "./ui/RatingUI";
 import { ratingItems } from "./lib/ratingItems";
 import { usePreparingResponse } from "../../shared/usePreparingResponse";
+import { Loading } from "../../shared/loading/ui/Loading";
 
 export const Rating = () => {
-  const [ratingItemsObject, setRatingItemsObject] = useState(null);
+  const [ratingItemsResponse, setRatingItemsResponse] = useState(null);
 
-  usePreparingResponse(setRatingItemsObject, "ratingItems");
+  usePreparingResponse(setRatingItemsResponse, "ratingItems");
 
-  return <RatingUI>{ratingItems(ratingItemsObject)}</RatingUI>;
+  return <RatingUI>{ratingItemsResponse?ratingItems(ratingItemsResponse.data):<Loading/>}</RatingUI>;
 };

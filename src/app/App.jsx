@@ -4,18 +4,22 @@ import { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import {MainPage} from "../pages/main/ui/MainPage"
-const BeerPageUi = lazy(() => import("../pages/beerPage/ui/BeerPageUi"));
+import { NavBar } from "../shared/navBar/NavBar";
+import { Header } from "../shared/header/Header";
+const BeerPage = lazy(() => import("../pages/beerPage/BeerPage"));
 
 function App() {
   return (
     <Router>
       <Suspense fallback={<div>Loading...</div>}>
+        <NavBar/>
+        <Header/>
         <Switch>
           <Route exact path="/">
             <MainPage />
           </Route>
           <Route path="/beerPage">
-            <BeerPageUi />
+           <BeerPage/>
           </Route>
         </Switch>
       </Suspense>

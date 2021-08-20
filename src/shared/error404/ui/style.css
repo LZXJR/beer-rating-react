@@ -1,0 +1,25 @@
+.error404 {
+  display: flex;
+  height: 87vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.error404_item{
+    display: flex;
+    align-items: center;
+}
+
+.error404 h3 {
+  font-size: 200px;
+  font-family: Lobster, sans-serif;
+  color: #ffffff;
+  font-weight: lighter;
+
+  margin-right: 20px;
+}
+
+.error404 img {
+  height: 200px;
+  width: 200px;
+}
