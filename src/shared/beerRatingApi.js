@@ -10,6 +10,11 @@ export const beerRatingApi = (way, id) => {
       return axios
         .get(`http://localhost:5000/beerPage-${id}`)
         .then((response) => response);
+    case "beerPhoto":
+      return axios
+        .get(`http://localhost:5000/beerPhoto-${id}`)
+        .then((response) => response);
+
     default:
       console.error("There is no such way");
   }
