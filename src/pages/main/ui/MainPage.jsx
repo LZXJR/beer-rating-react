@@ -3,6 +3,7 @@ import "./style.css";
 
 import { Layout } from "../../../shared/layout/ui/Layout";
 import { Rating } from "../../../features/rating/Rating.jsx";
+import { BeerFilter } from "../../../features/beerFilter/ui/BeerFilter";
 
 export const MainPage = () => {
   return (
@@ -11,6 +12,7 @@ export const MainPage = () => {
         <div className="header_and_main">
           <main>
             <Layout>
+              <BeerFilter />
               <Rating />
             </Layout>
           </main>

@@ -9,7 +9,7 @@
     "name": "Name",
     "color": "Color",
     "filtration": "Filtration",
-    "fortress":"%",
+    "fortress": "%",
     "grade": "Grade"
   },
   "BeerCharacteristicsItem": {
@@ -41,5 +41,9 @@
     "titleButtonLoadMore": "Load more...",
     "titleButtonComment": "Comment",
     "titleButtonCancel": "Cancel"
+  },
+  "OptionsForBeerFilterMain": {
+    "decreaseInEstimate": "Decrease in estimate",
+    "growthIsEstimated": "Growth is estimated"
   }
 }

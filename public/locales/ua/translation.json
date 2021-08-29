@@ -42,5 +42,9 @@
     "titleButtonLoadMore": "Більше",
     "titleButtonComment": "Коментувати",
     "titleButtonCancel": "Відмінити"
+  },
+  "OptionsForBeerFilterMain": {
+    "decreaseInEstimate": "Спадання по оцінці",
+    "growthIsEstimated": "Ріст по оцінці"
   }
 }

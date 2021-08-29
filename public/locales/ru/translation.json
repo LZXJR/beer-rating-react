@@ -1,47 +1,50 @@
 {
-    "nav":{
-        "navItemOne":"Кабинет",
-        "navItemTwo":"Случайное пиво",
-        "navItemThree":"О нас",
-        "navItemFour":"Поддержать проект"
-    },
-    "ratingTitle":{
-        "name":"Название",
-        "color": "Цвет",
-        "filtration": "Фильтрация",
-    "fortress":"%",
+  "nav": {
+    "navItemOne": "Кабинет",
+    "navItemTwo": "Случайное пиво",
+    "navItemThree": "О нас",
+    "navItemFour": "Поддержать проект"
+  },
+  "ratingTitle": {
+    "name": "Название",
+    "color": "Цвет",
+    "filtration": "Фильтрация",
+    "fortress": "%",
 
-        "grade":"Оценка"
-    },
-    "BeerCharacteristicsItem":{
-        "titleCost":"Цена",
-        "titleTaste":"Вкус",
-        "titleLook":"Вид",
-        "titleSmell":"Запах",
-        "titleAlcoholContent":"Содержание Алкоголя"
-    },
-    "BeerDescription":{
-        "title":"ПОДРОБНОЕ ОПИСАНИЕ",
-        "BeerDescriptionTable":{
-            "titleCountry":"Страна",
-            "titleManufacturer":"Фабрика",
-            "titleCost":"Цена",
-            "titleSort":"Сорт",
-            "titleColor":"Цвет",
-            "titleFiltration":"Фильтрация",
-            "titleAlcoholContent":"Содержание Алкоголя",
-            "titleDensity":"Плотность",
-            "titleComposition":"Состав",
-            "titleShelfLife":"Срок годности",
-            "titleStorageСonditions":"Условия хранения",
-            "titleOfficialSite":"Официальный сайт"
-
-        }
-    },
-    "BeerComments": {
-        "title": "КОМЕНТАРИИ",
-        "titleButtonLoadMore": "Больше",
-        "titleButtonComment": "Комментировать",
-        "titleButtonCancel": "Отмена"
-      }
+    "grade": "Оценка"
+  },
+  "BeerCharacteristicsItem": {
+    "titleCost": "Цена",
+    "titleTaste": "Вкус",
+    "titleLook": "Вид",
+    "titleSmell": "Запах",
+    "titleAlcoholContent": "Содержание Алкоголя"
+  },
+  "BeerDescription": {
+    "title": "ПОДРОБНОЕ ОПИСАНИЕ",
+    "BeerDescriptionTable": {
+      "titleCountry": "Страна",
+      "titleManufacturer": "Фабрика",
+      "titleCost": "Цена",
+      "titleSort": "Сорт",
+      "titleColor": "Цвет",
+      "titleFiltration": "Фильтрация",
+      "titleAlcoholContent": "Содержание Алкоголя",
+      "titleDensity": "Плотность",
+      "titleComposition": "Состав",
+      "titleShelfLife": "Срок годности",
+      "titleStorageСonditions": "Условия хранения",
+      "titleOfficialSite": "Официальный сайт"
+    }
+  },
+  "BeerComments": {
+    "title": "КОМЕНТАРИИ",
+    "titleButtonLoadMore": "Больше",
+    "titleButtonComment": "Комментировать",
+    "titleButtonCancel": "Отмена"
+  },
+  "OptionsForBeerFilterMain": {
+    "decreaseInEstimate": "Падение по оценке",
+    "growthIsEstimated": "Рост по оценке"
+  }
 }
