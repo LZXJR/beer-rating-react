@@ -4,10 +4,10 @@ export const useOptionsForBeerFilterMain = () => {
   const { t } = useTranslation();
   const optionsForBeerFilterMain = [
     {
-      value: "decrease",
+      value: "decreaseInEstimate",
       name: t("OptionsForBeerFilterMain.decreaseInEstimate"),
     },
-    { value: "growth", 
+    { value: "growthIsEstimated", 
       name: t("OptionsForBeerFilterMain.growthIsEstimated") },
   ];
 

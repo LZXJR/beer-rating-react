@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { beerRatingApi } from "./beerRatingApi";
 
-export const usePreparingResponse = (setState, request, id) => {
+export const usePrepareResponse = (setState, request, id, choosedFilter) => {
   useEffect(() => {
     beerRatingApi(request, id)
       .then((response) => {
@@ -9,7 +9,7 @@ export const usePreparingResponse = (setState, request, id) => {
       })
       .catch((error) => {
         console.error(error);
-        setState(error.response)
+        setState(error.response);
       });
-  }, [id, request,setState]);
+  }, [id, request, setState,choosedFilter]);
 };

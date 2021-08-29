@@ -1,21 +1,9 @@
 import axios from "axios";
 
-export const beerRatingApi = (way, id) => {
-  switch (way) {
-    case "ratingItems":
-      return axios
-        .get("http://localhost:5000/ratingItems")
-        .then((response) => response);
-    case "beerPage":
-      return axios
-        .get(`http://localhost:5000/beerPage-${id}`)
-        .then((response) => response);
-    case "beerPhoto":
-      return axios
-        .get(`http://localhost:5000/beerPhoto-${id}`)
-        .then((response) => response);
+const IP = "localhost";
+const PORT = 5000;
 
-    default:
-      console.error("There is no such way");
-  }
-};
+export const beerRatingApi = (path, id) =>
+  axios
+    .get(`http://${IP}:${PORT}/${id ? `${path}-${id}` : path}`)
+    .then((response) => response);

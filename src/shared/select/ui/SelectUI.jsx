@@ -1,6 +1,6 @@
 import "./style.css";
 
-export const SelectUI = ({ options, setState }) => {
+export const SelectUI = ({ options, setChoose }) => {
   const getOptions = () =>
     options
       ? options.map((option, id) => (
@@ -13,7 +13,7 @@ export const SelectUI = ({ options, setState }) => {
   return (
     <select
       className="global_filter_select"
-      onChange={(event) => setState(event.target.value)}
+      onChange={(event) => setChoose(event.target.value)}
     >
       {getOptions()}
     </select>

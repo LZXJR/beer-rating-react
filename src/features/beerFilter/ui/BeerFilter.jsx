@@ -4,11 +4,11 @@ import { useOptionsForBeerFilterMain } from "../../../entities/useOptionsForBeer
 
 import "./style.css";
 
-export const BeerFilter = () => {
+export const BeerFilter = ({chooseFilter}) => {
   return (
     <div className="beer_filter">
       <FilterButton />
-      <SelectUI options={useOptionsForBeerFilterMain()} />
+      <SelectUI options={useOptionsForBeerFilterMain()} setChoose={chooseFilter}/>
     </div>
   );
 };

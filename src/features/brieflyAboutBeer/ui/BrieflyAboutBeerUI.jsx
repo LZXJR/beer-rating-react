@@ -9,7 +9,7 @@ import lookIcon from "./img/look.svg";
 import SmellIcon from "./img/smell.svg";
 import alcoholIcon from "./img/alcohol-content.svg";
 
-import { usePreparingResponse } from "../../../shared/usePreparingResponse.js";
+import { usePrepareResponse } from "../../../shared/usePrepareResponse.js";
 import { useState } from "react";
 import { Loading } from "../../../shared/loading/ui/Loading.jsx";
 
@@ -26,7 +26,7 @@ export const BrieflyAboutBeerUI = ({ beerPageData }) => {
 
   const [beerPhoto, setBeerPhoto] = useState(null);
 
-  usePreparingResponse(setBeerPhoto, "beerPhoto", id);
+  usePrepareResponse(setBeerPhoto, "beerPhoto", id);
 
 
   return (

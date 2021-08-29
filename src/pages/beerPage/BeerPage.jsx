@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Error404 } from "../../shared/error404/ui/Error404";
 import { Loading } from "../../shared/loading/ui/Loading";
-import { usePreparingResponse } from "../../shared/usePreparingResponse";
+import { usePrepareResponse } from "../../shared/usePrepareResponse";
 import { BeerPageUi } from "./ui/BeerPageUi";
 
 const BeerPage = () => {
   const [beerPageResponse, setBeerPageDataResponse] = useState(null);
 
-  usePreparingResponse(
+  usePrepareResponse(
     setBeerPageDataResponse,
     "beerPage",
     localStorage.getItem("beerId")
