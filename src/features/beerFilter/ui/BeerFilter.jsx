@@ -1,6 +1,6 @@
 import { FilterButton } from "../../../shared/filterButton/ui/FilterButton";
 import {SelectUI} from "../../../shared/select/ui/SelectUI"
-import { useOptionsForBeerFilterMain } from "../../../entities/useOptionsForBeerFilterMain";
+import { useOptionsForBeerFilterMain } from "../lib/useOptionsForBeerFilterMain";
 
 import "./style.css";
 

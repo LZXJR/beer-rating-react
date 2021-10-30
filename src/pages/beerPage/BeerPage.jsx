@@ -7,11 +7,9 @@ import { BeerPageUi } from "./ui/BeerPageUi";
 const BeerPage = () => {
   const [beerPageResponse, setBeerPageDataResponse] = useState(null);
 
-  usePrepareResponse(
-    setBeerPageDataResponse,
-    "beerPage",
-    localStorage.getItem("beerId")
-  );
+  const beerId = localStorage.getItem("beerId");
+
+  usePrepareResponse(setBeerPageDataResponse, "beerPage",beerId);
 
   const NOT_FOUND_ERROR_CODE = 404;
 

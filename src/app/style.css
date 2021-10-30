@@ -122,9 +122,25 @@ button {
   margin-bottom: 5px;
 }
 
+.briefly_about_beer_item {
+  width: 59.8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 80px 20px;
+}
+
 @media (max-width: 824px) {
   body {
     padding: 0;
+  }
+}
+
+@media (max-width: 551px) {
+  .briefly_about_beer_item {
+    width: 100%;
   }
 }
 

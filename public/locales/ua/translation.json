@@ -46,5 +46,7 @@
   "OptionsForBeerFilterMain": {
     "decreaseInEstimate": "Спадання по оцінці",
     "growthIsEstimated": "Ріст по оцінці"
-  }
+  },
+  "SumUpButton": "оцінити",
+  "SumUpExplaining": "Щоб оцінити, потрібно змінити хоча б одну шкалу, натиснувши на неї"
 }

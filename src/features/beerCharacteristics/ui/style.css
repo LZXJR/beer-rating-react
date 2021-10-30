@@ -1,0 +1,23 @@
+.briefly_about_beer_item:nth-child(2) {
+  min-height: 608px;
+}
+
+.sumUp_button {
+  padding: 10px 30px;
+  background-color: rgb(255, 93, 93);
+  border-radius: 10px;
+  color: #fff;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.sumUp_button:hover {
+  background-color: rgb(250, 71, 71);
+}
+
+.sum_up_explaining {
+  color: rgb(255, 93, 93);
+  font-size: 14px;
+  text-align: center;
+
+}

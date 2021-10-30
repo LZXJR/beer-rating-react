@@ -45,5 +45,8 @@
   "OptionsForBeerFilterMain": {
     "decreaseInEstimate": "Decrease in estimate",
     "growthIsEstimated": "Growth is estimated"
-  }
+  },
+  "SumUpButton":"sum up",
+  "SumUpExplaining":"To evaluate, you need to change, at least one scale by clicking on it"
+  
 }

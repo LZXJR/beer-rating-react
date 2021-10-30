@@ -1,0 +1,15 @@
+.briefly_about_beer_item:nth-child(1) {
+  width: 39.8%;
+  padding: 40px 20px;
+}
+
+.zoom_beer_photo {
+  z-index: 1;
+}
+
+@media (max-width:551px){
+    .briefly_about_beer_item:nth-child(1) {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }

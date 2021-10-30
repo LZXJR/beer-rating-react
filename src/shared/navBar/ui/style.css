@@ -62,7 +62,6 @@ nav {
 }
 .languages button {
   cursor: pointer;
-  border: 0;
   background-color: rgba(0, 0, 0, 0);
   font-family: Roboto, sans-serif;
   font-weight: bold;

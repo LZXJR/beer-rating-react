@@ -1,11 +1,24 @@
 import "./style.css";
+import { useDispatch } from "react-redux";
+import { scaleItemsGrades } from "../lib/scaleItemsGrades";
 
-export const BeerCharacteristicsItem = ({
+export const BeerCharacteristicsItemUI = ({
   characteristicTitle,
-  characteristicTag,
-  characteristicGrade,
   characteristicIcon,
+  characteristicTag,
+
+  classNameForScaleItemWithSelectingOfScaleGrade,
+  hoverScaleGrade,
+  changeEstimateStates,
 }) => {
+  const dispatch = useDispatch();
+
+  const {
+    setEstimateProcessStatus,
+    setHoverScaleGrade,
+    setSelectedScaleGrade,
+  } = changeEstimateStates;
+
   return (
     <div className="beer_characteristics_item">
       <img
@@ -13,43 +26,82 @@ export const BeerCharacteristicsItem = ({
         src={characteristicIcon}
         alt="beer_characteristic"
       />
-      <div className="beer_characteristics_item_scale_and_title">
+      <div className="beer_characteristics_items_scale_and_title">
         <p>{characteristicTitle}</p>
-        <div className="beer_characteristics_item_scale">
+        <div
+          className="beer_characteristics_item_scale"
+          onMouseEnter={() => {
+            setEstimateProcessStatus(true);
+          }}
+          onMouseLeave={() => {
+            setEstimateProcessStatus(false);
+            setHoverScaleGrade(null);
+          }}
+        >
           <div
-            className={
-              characteristicGrade >= 1
-                ? "beer_characteristics_item_scale_item " + characteristicTag
-                : "beer_characteristics_item_scale_item "
-            }
+            className={classNameForScaleItemWithSelectingOfScaleGrade(
+              scaleItemsGrades.firstItem
+            )}
+            onMouseEnter={() => setHoverScaleGrade(scaleItemsGrades.firstItem)}
+            onClick={() => {
+              setSelectedScaleGrade(hoverScaleGrade);
+              dispatch({
+                type: `set_${characteristicTag}`,
+                payload: scaleItemsGrades.firstItem,
+              });
+            }}
           />
           <div
-            className={
-              characteristicGrade >= 2
-                ? "beer_characteristics_item_scale_item " + characteristicTag
-                : "beer_characteristics_item_scale_item "
-            }
+            className={classNameForScaleItemWithSelectingOfScaleGrade(
+              scaleItemsGrades.secondItem
+            )}
+            onMouseEnter={() => setHoverScaleGrade(scaleItemsGrades.secondItem)}
+            onClick={() => {
+              setSelectedScaleGrade(hoverScaleGrade);
+              dispatch({
+                type: `set_${characteristicTag}`,
+                payload: scaleItemsGrades.secondItem,
+              });
+            }}
           />
           <div
-            className={
-              characteristicGrade >= 3
-                ? "beer_characteristics_item_scale_item " + characteristicTag
-                : "beer_characteristics_item_scale_item "
-            }
+            className={classNameForScaleItemWithSelectingOfScaleGrade(
+              scaleItemsGrades.thirdItem
+            )}
+            onMouseEnter={() => setHoverScaleGrade(scaleItemsGrades.thirdItem)}
+            onClick={() => {
+              setSelectedScaleGrade(hoverScaleGrade);
+              dispatch({
+                type: `set_${characteristicTag}`,
+                payload: scaleItemsGrades.thirdItem,
+              });
+            }}
           />
           <div
-            className={
-              characteristicGrade >= 4
-                ? "beer_characteristics_item_scale_item " + characteristicTag
-                : "beer_characteristics_item_scale_item "
-            }
+            className={classNameForScaleItemWithSelectingOfScaleGrade(
+              scaleItemsGrades.fourthItem
+            )}
+            onMouseEnter={() => setHoverScaleGrade(scaleItemsGrades.fourthItem)}
+            onClick={() => {
+              setSelectedScaleGrade(hoverScaleGrade);
+              dispatch({
+                type: `set_${characteristicTag}`,
+                payload: scaleItemsGrades.fourthItem,
+              });
+            }}
           />
           <div
-            className={
-              characteristicGrade >= 5
-                ? "beer_characteristics_item_scale_item " + characteristicTag
-                : "beer_characteristics_item_scale_item "
-            }
+            className={classNameForScaleItemWithSelectingOfScaleGrade(
+              scaleItemsGrades.fifthItem
+            )}
+            onMouseEnter={() => setHoverScaleGrade(scaleItemsGrades.fifthItem)}
+            onClick={() => {
+              setSelectedScaleGrade(hoverScaleGrade);
+              dispatch({
+                type: `set_${characteristicTag}`,
+                payload: scaleItemsGrades.fifthItem,
+              });
+            }}
           />
         </div>
       </div>

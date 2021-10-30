@@ -4,12 +4,12 @@ import "./style.css";
 import { Layout } from "../../../shared/layout/ui/Layout";
 import { Rating } from "../../../features/rating/Rating.jsx";
 import { BeerFilter } from "../../../features/beerFilter/ui/BeerFilter";
+import { changeState } from "../../../shared/changeState";
 
 export const MainPage = () => {
   const [choosedFilter, setChoosedFilter] = useState("decreaseInEstimate");
 
-  const chooseFilter = (value) => setChoosedFilter(value);
-
+  const chooseFilter = changeState(setChoosedFilter);
   return (
     <>
       <Suspense fallback="Loading...">

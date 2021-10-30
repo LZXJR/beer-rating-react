@@ -1,0 +1,1 @@
+export const changeState = (setState) =>(value)=>setState(value)

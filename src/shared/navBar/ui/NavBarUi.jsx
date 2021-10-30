@@ -7,6 +7,7 @@ import arrow from "./img/arrow.svg";
 
 export const NavBarUi = ({
   styleForNavBarOptions,
+  styleForLanguagesOptions,
   switchingNavigation,
   choosingLanguageStyles
 }) => {
@@ -56,9 +57,9 @@ export const NavBarUi = ({
             </ul>
 
             <div className="languages">
-              <button  style={styleForNavBarOptions.ua} onClick={(event) =>{changeLanguage("ua");choosingLanguageStyles(event)}}>UA</button>
-              <button  style={styleForNavBarOptions.en} onClick={(event) =>{changeLanguage("en");choosingLanguageStyles(event)}}>EN</button>
-              <button  style={styleForNavBarOptions.ru} onClick={(event) =>{changeLanguage("ru");choosingLanguageStyles(event)}}>RU</button>
+              <button  style={styleForLanguagesOptions.ua} onClick={(event) =>{changeLanguage("ua");choosingLanguageStyles(event)}}>UA</button>
+              <button  style={styleForLanguagesOptions.en} onClick={(event) =>{changeLanguage("en");choosingLanguageStyles(event)}}>EN</button>
+              <button  style={styleForLanguagesOptions.ru} onClick={(event) =>{changeLanguage("ru");choosingLanguageStyles(event)}}>RU</button>
              
             </div>
 
