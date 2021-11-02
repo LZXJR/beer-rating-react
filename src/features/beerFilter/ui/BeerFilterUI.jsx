@@ -15,5 +15,5 @@ export const BeerFilterUI = ({chooseFilter}) => {
 };
 
 BeerFilterUI.propTypes = {
-  chooseFilter:PropTypes.string.isRequired
+  chooseFilter:PropTypes.func.isRequired
 }

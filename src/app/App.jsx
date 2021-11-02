@@ -4,8 +4,8 @@ import { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { MainPage } from "../pages/main/";
-import { NavBar } from "../shared/navBar/";
-import { Header } from "../shared/header/";
+import { NavBar } from "../features/navBar/";
+import { Header } from "../features/header/";
 
 const BeerPage = lazy(() => import("../pages/beerPage/"));
 

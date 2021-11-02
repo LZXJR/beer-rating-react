@@ -89,6 +89,8 @@ h2 {
   color: #ffffff;
 }
 .search_button{
+  cursor: pointer;
+
   display: none;
 }
 

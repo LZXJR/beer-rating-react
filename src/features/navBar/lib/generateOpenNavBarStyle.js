@@ -1,4 +1,4 @@
-import { isItMobile } from "../../isItMobile";
+import { isItMobile } from "../../../shared/isItMobile";
 
 export const generateOpenNavBarStyle = () => {
   const windowWidth = window.innerWidth;
