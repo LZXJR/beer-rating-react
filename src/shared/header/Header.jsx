@@ -2,9 +2,9 @@ import { useState } from "react";
 import { HeaderUi } from "./ui/HeaderUi";
 
 export const Header = () => {
-  const [styleForHeader, setStyleForHeader] = useState(null);
-  const [styleForSearchButton, setStyleForSearchButton] = useState(null);
-  const [styleForSearchBar, setStyleForSearchBar] = useState(null);
+  const [styleForHeader, setStyleForHeader] = useState({});
+  const [styleForSearchButton, setStyleForSearchButton] = useState({});
+  const [styleForSearchBar, setStyleForSearchBar] = useState({});
 
   const openSearchBar = () => {
     const widthOfSearchBar = 214;
@@ -23,3 +23,8 @@ export const Header = () => {
     />
   );
 };
+
+
+
+// ^
+// I will refact it 

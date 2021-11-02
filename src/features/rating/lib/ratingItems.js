@@ -1,4 +1,4 @@
-import { RatingItemUI } from "../../../shared/ratingItem/ui/RatingItemUI";
+import { RatingItemUI } from "../../../shared/ratingItem/";
 
 export const ratingItems = (ratingItemsObject) => ratingItemsObject.map((ratingItem, id) => (
         <RatingItemUI

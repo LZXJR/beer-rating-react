@@ -1,18 +1,19 @@
 import "./style.css";
 import { Layout } from "../../../shared/layout/ui/Layout";
 
-import { Button3dUI } from "../../../features/3dButton/ui/Button3dUI";
-import { BrieflyAboutBeerUI } from "../../../features/brieflyAboutBeer/ui/BrieflyAboutBeerUI";
-import { BeerPhotoUI } from "../../../features/beerPhoto/ui/BeerPhotoUI";
-import { BeerCharacteristics } from "../../../features/beerCharacteristics/BeerCharacteristics";
-import { BeerDescriptionUI } from "../../../features/beerDescription/ui/BeerDescriptionUI";
-import { BeerCommentsUI } from "../../../features/beerComments/ui/BeerCommentsUI";
+import { Button3dUI } from "../../../features/3dButton/";
+import { BrieflyAboutBeerUI } from "../../../features/brieflyAboutBeer/";
+import { BeerPhotoUI } from "../../../features/beerPhoto/";
+import { BeerCharacteristics } from "../../../features/beerCharacteristics/";
+import { BeerDescriptionUI } from "../../../features/beerDescription/";
+import { BeerCommentsUI } from "../../../features/beerComments/";
+
+import PropTypes from 'prop-types';
 
 export const BeerPageUi = ({ beerPageData }) => {
   const { id, name } = beerPageData;
   return (
     <>
-      <div className="header_and_main">
         <main>
           <Layout>
             <div className="beerPage">
@@ -30,7 +31,11 @@ export const BeerPageUi = ({ beerPageData }) => {
             </div>
           </Layout>
         </main>
-      </div>
     </>
   );
 };
+
+
+BeerPageUi.propTypes = {
+  beerPageData:PropTypes.object.isRequired
+}

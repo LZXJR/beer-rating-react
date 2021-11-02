@@ -3,7 +3,9 @@ import closeFilter from "./img/closeFilter.svg";
 import { useState } from "react";
 import "./style.css";
 
-export const FilterButton = ({ onClickFunction }) => {
+import PropTypes from 'prop-types';
+
+export const FilterButtonUI = ({ onClickFunction }) => {
   const [Filter, setFilter] = useState(false);
 
   return (
@@ -17,3 +19,8 @@ export const FilterButton = ({ onClickFunction }) => {
     </button>
   );
 };
+
+FilterButtonUI.propTypes = {
+  onClickFunction:PropTypes.func
+}
+

@@ -2,6 +2,8 @@ import "./style.css";
 import { useDispatch } from "react-redux";
 import { scaleItemsGrades } from "../lib/scaleItemsGrades";
 
+import PropTypes from 'prop-types';
+
 export const BeerCharacteristicsItemUI = ({
   characteristicTitle,
   characteristicIcon,
@@ -108,3 +110,11 @@ export const BeerCharacteristicsItemUI = ({
     </div>
   );
 };
+BeerCharacteristicsItemUI.propTypes = {
+  characteristicTitle:PropTypes.string.isRequired,
+  characteristicIcon:PropTypes.string.isRequired,
+  characteristicTag:PropTypes.string.isRequired,
+  classNameForScaleItemWithSelectingOfScaleGrade:PropTypes.func.isRequired,
+  hoverScaleGrade:PropTypes.number,
+  changeEstimateStates:PropTypes.object.isRequired
+}

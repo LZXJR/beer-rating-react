@@ -4,6 +4,8 @@ import { useSelector } from "react-redux";
 import { BeerCharacteristicsUI } from "./ui/BeerCharacteristicsUI";
 import { beerRatingApi } from "../../shared/beerRatingApi";
 
+import PropTypes from 'prop-types';
+
 export const BeerCharacteristics = ({ beerPageData }) => {
   const { id } = beerPageData;
   const { t } = useTranslation();
@@ -64,3 +66,8 @@ export const BeerCharacteristics = ({ beerPageData }) => {
     </BeerCharacteristicsUI>
   );
 };
+
+
+BeerCharacteristics.propTypes = {
+  beerPageData:PropTypes.object.isRequired
+}

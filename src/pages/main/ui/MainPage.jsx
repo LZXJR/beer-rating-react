@@ -1,9 +1,9 @@
 import { Suspense, useState } from "react";
 import "./style.css";
 
-import { Layout } from "../../../shared/layout/ui/Layout";
-import { Rating } from "../../../features/rating/Rating.jsx";
-import { BeerFilter } from "../../../features/beerFilter/ui/BeerFilter";
+import { Layout } from "../../../shared/layout/";
+import { Rating } from "../../../features/rating/";
+import { BeerFilterUI } from "../../../features/beerFilter/";
 import { changeState } from "../../../shared/changeState";
 
 export const MainPage = () => {
@@ -16,7 +16,7 @@ export const MainPage = () => {
         <div className="header_and_main">
           <main>
             <Layout>
-              <BeerFilter chooseFilter={chooseFilter} />
+              <BeerFilterUI chooseFilter={chooseFilter} />
               <Rating choosedFilter={choosedFilter} />
             </Layout>
           </main>

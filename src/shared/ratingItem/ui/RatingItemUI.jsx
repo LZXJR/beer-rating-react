@@ -2,6 +2,7 @@ import ratingStar from "./img/star.svg";
 import { setIdInLocalStorage } from "../lib/setIdInLocalStorage";
 import "./style.css";
 
+import PropTypes from 'prop-types';
 
 
 export const RatingItemUI = ({
@@ -29,3 +30,13 @@ export const RatingItemUI = ({
   );
 };
 
+
+RatingItemUI.propTypes={
+  place:PropTypes.number.isRequired,
+  name:PropTypes.string,
+  color:PropTypes.string.isRequired,
+  filtration:PropTypes.string.isRequired,
+  grade:PropTypes.number.isRequired,
+  fortress:PropTypes.number.isRequired,
+  id:PropTypes.number.isRequired
+}

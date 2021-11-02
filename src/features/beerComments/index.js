@@ -1,0 +1,1 @@
+export { BeerCommentsUI } from "./ui/BeerCommentsUI";

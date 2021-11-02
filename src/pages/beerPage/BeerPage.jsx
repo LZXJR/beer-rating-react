@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Error404 } from "../../shared/error404/ui/Error404";
+import { Error404UI } from "../../shared/error404/ui/Error404UI";
 import { Loading } from "../../shared/loading/ui/Loading";
 import { usePrepareResponse } from "../../shared/usePrepareResponse";
 import { BeerPageUi } from "./ui/BeerPageUi";
@@ -17,7 +17,7 @@ const BeerPage = () => {
     if (beerPageResponse) {
       const [beerPageData] = beerPageResponse.data;
       return beerPageResponse.status === NOT_FOUND_ERROR_CODE ? (
-        <Error404 />
+        <Error404UI />
       ) : (
         <BeerPageUi beerPageData={beerPageData} />
       );

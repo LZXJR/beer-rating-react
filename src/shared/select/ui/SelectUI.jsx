@@ -1,5 +1,7 @@
 import "./style.css";
 
+import PropTypes from "prop-types";
+
 export const SelectUI = ({ options, setChoose }) => {
   const getOptions = () =>
     options
@@ -18,4 +20,9 @@ export const SelectUI = ({ options, setChoose }) => {
       {getOptions()}
     </select>
   );
+};
+
+SelectUI.propTypes = {
+  options: PropTypes.array.isRequired,
+  setChoose: PropTypes.func.isRequired,
 };

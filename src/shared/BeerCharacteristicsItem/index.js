@@ -1,0 +1,1 @@
+export { BeerCharacteristicsItem } from "./BeerCharacteristicsItem";

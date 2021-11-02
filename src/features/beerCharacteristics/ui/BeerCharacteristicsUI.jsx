@@ -1,11 +1,13 @@
 import { useTranslation } from "react-i18next";
-import { BeerCharacteristicsItem } from "../../../shared/beerCharacteristicsItem/BeerCharacteristicsItem";
+import { BeerCharacteristicsItem } from "../../../shared/beerCharacteristicsItem/";
 
 import costIcon from "./img/money-bag.svg";
 import tasteIcon from "./img/wine-tasting.svg";
 import lookIcon from "./img/look.svg";
 import SmellIcon from "./img/smell.svg";
 import alcoholIcon from "./img/alcohol-content.svg";
+
+import PropTypes from "prop-types";
 
 import "./style.css";
 export const BeerCharacteristicsUI = ({
@@ -14,7 +16,6 @@ export const BeerCharacteristicsUI = ({
   children,
 }) => {
   const { t } = useTranslation();
-
 
   const { cost_grade, taste_grade, look_grade, smell_grade, alcohol_grade } =
     beerPageData;
@@ -58,4 +59,8 @@ export const BeerCharacteristicsUI = ({
       {children}
     </div>
   );
+};
+
+BeerCharacteristicsUI.propTypes = {
+  sumUpBeer: PropTypes.func.isRequired,
 };

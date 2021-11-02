@@ -1,0 +1,1 @@
+export { BeerPhotoUI } from "./ui/BeerPhotoUI";

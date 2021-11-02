@@ -4,6 +4,8 @@ import { useState } from "react";
 import { Loading } from "../../../shared/loading/ui/Loading.jsx";
 import "./style.css"
 
+import PropTypes from 'prop-types';
+
 export const BeerPhotoUI = ({id}) => {
   const [beerPhoto, setBeerPhoto] = useState(null);
   usePrepareResponse(setBeerPhoto, "beerPhoto", id);
@@ -44,3 +46,8 @@ export const BeerPhotoUI = ({id}) => {
     </div>
   );
 };
+
+
+BeerPhotoUI.propTypes = {
+  id:PropTypes.number.isRequired
+}

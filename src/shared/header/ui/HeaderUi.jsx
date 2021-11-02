@@ -40,10 +40,9 @@ export const HeaderUi = ({styleForHeader,styleForSearchButton,styleForSearchBar,
   );
 };
 
-// HeaderUi.propTypes={
-//   styleForHeader:PropTypes.object.isRequired,
-//   styleForSearchButton:PropTypes.object.isRequired,
-//   styleForSearchBar:PropTypes.object.isRequired,
-//   openSearchBar:PropTypes.func.isRequired,
-
-// }
+HeaderUi.propTypes={
+  styleForHeader:PropTypes.object.isRequired,
+  styleForSearchButton:PropTypes.object.isRequired,
+  styleForSearchBar:PropTypes.object.isRequired,
+  openSearchBar:PropTypes.func.isRequired,
+}

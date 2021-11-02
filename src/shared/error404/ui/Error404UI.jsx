@@ -1,7 +1,7 @@
 import "./style.css";
 import noBeerIcon from "./img/no-alcohol.svg";
 
-export const Error404 = () => {
+export const Error404UI = () => {
   return (
     <div className="error404">
       <div className="error404_item">

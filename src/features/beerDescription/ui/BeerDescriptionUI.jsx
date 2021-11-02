@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import "./style.css";
 
+import PropTypes from 'prop-types';
+
 export const BeerDescriptionUI = ({ beerPageData }) => {
   const { t } = useTranslation();
 
@@ -67,3 +69,8 @@ export const BeerDescriptionUI = ({ beerPageData }) => {
     </div>
   );
 };
+
+
+BeerDescriptionUI.propTypes = {
+  beerPageData:PropTypes.object.isRequired
+}
