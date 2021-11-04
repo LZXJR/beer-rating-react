@@ -1,41 +1,43 @@
 import { useTranslation } from "react-i18next";
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 import "./style.css";
 
 import beersIcon from "./img/beersIcon.svg";
-import arrow from "./img/arrow.svg";
+import arrowIcon from "./img/arrow.svg";
 
 export const NavBarUi = ({
   styleForNavBarOptions,
   styleForLanguagesOptions,
   switchingNavigation,
-  choosingLanguageStyles
+  choosingLanguageStyles,
 }) => {
   const { t, i18n } = useTranslation();
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
   };
 
+  const { ua, en, ru } = styleForLanguagesOptions;
+  const { blackBackground, arrow, navBarWidth } = styleForNavBarOptions;
+
   return (
     <>
-      <div className="black_bg" style={styleForNavBarOptions.blackBackground}></div>
+      <div className="black_bg" style={blackBackground}></div>
 
       <button
         className="open_navBar"
-        style={styleForNavBarOptions.arrow}
+        style={arrow}
         onClick={() => switchingNavigation()}
       >
-        <img src={arrow} alt="arrow" />
+        <img src={arrowIcon} alt="arrow" />
       </button>
 
-      <nav style={styleForNavBarOptions.navBarWidth}>
-        
+      <nav style={navBarWidth}>
         <header className="navBar_container navBar_header_bgcolor">
           <div className="nav_header">
-            <div className="header_title">
+            <a href="/" className="header_title">
               <h2>BeerRating</h2>
               <img src={beersIcon} alt="beers"></img>
-            </div>
+            </a>
           </div>
         </header>
 
@@ -57,18 +59,40 @@ export const NavBarUi = ({
             </ul>
 
             <div className="languages">
-              <button  style={styleForLanguagesOptions.ua} onClick={(event) =>{changeLanguage("ua");choosingLanguageStyles(event)}}>UA</button>
-              <button  style={styleForLanguagesOptions.en} onClick={(event) =>{changeLanguage("en");choosingLanguageStyles(event)}}>EN</button>
-              <button  style={styleForLanguagesOptions.ru} onClick={(event) =>{changeLanguage("ru");choosingLanguageStyles(event)}}>RU</button>
-             
+              <button
+                style={ua}
+                onClick={() => {
+                  changeLanguage("ua");
+                  choosingLanguageStyles();
+                }}
+              >
+                UA
+              </button>
+              <button
+                style={en}
+                onClick={() => {
+                  changeLanguage("en");
+                  choosingLanguageStyles();
+                }}
+              >
+                EN
+              </button>
+              <button
+                style={ru}
+                onClick={() => {
+                  changeLanguage("ru");
+                  choosingLanguageStyles();
+                }}
+              >
+                RU
+              </button>
             </div>
 
             <div className="logIn_SignUp logIn_SignUp_NavBar">
-            <a href="#">Log in</a>
+              <a href="#">Log in</a>
               <span> | </span>
               <a href="#">Sign up</a>
             </div>
-
           </main>
         </div>
       </nav>
@@ -76,9 +100,9 @@ export const NavBarUi = ({
   );
 };
 
-NavBarUi.propTypes={
-  styleForNavBarOptions:PropTypes.object.isRequired,
-  styleForLanguagesOptions:PropTypes.object.isRequired,
-  choosingLanguageStyles:PropTypes.func.isRequired,
-  switchingNavigation:PropTypes.func.isRequired,
-}
+NavBarUi.propTypes = {
+  styleForNavBarOptions: PropTypes.object.isRequired,
+  styleForLanguagesOptions: PropTypes.object,
+  choosingLanguageStyles: PropTypes.func.isRequired,
+  switchingNavigation: PropTypes.func.isRequired,
+};

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavBarUi } from "./ui/NavBarUi";
 import { defaultValue } from "./config/styleForNavBarConfig";
 import { generateOpenNavBarStyle } from "./lib/generateOpenNavBarStyle";
@@ -7,9 +7,14 @@ export const NavBar = () => {
   const [styleForNavBarOptions, setStyleForNavBarOptions] =
     useState(defaultValue);
 
-  const [styleForLanguagesOptions, setStyleForLanguagesOptions] = useState({
-    ru: { border: 0, fontSize: "16px" },
-  });
+  const [styleForLanguagesOptions, setStyleForLanguagesOptions] =
+    useState({
+      ua: null,
+      ru: null,
+      en: null,
+    });
+
+    useEffect(() => choosingLanguageStyles(), []);
 
   const switchingNavigation = () => {
     const isNavBarOpen = styleForNavBarOptions.navBarWidth;
@@ -21,9 +26,9 @@ export const NavBar = () => {
     setStyleForNavBarOptions(generateOpenNavBarStyle());
   };
 
-  const choosingLanguageStyles = (event) => {
+  const choosingLanguageStyles = () => {
     const languageIsChoosed = { border: 0, fontSize: "16px" };
-    const buttonId = event.target.outerText.toLowerCase();
+    const buttonId = localStorage.getItem("i18nextLng");
 
     switch (buttonId) {
       case "ru": {
