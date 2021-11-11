@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { BeerCharacteristicsItem } from "../../../shared/beerCharacteristicsItem/";
+import { BeerCharacteristicsItem } from "../../../shared/BeerCharacteristicsItem";
 
 import costIcon from "./img/money-bag.svg";
 import tasteIcon from "./img/wine-tasting.svg";

@@ -3,13 +3,14 @@ import { Error404UI } from "../../shared/error404/ui/Error404UI";
 import { Loading } from "../../shared/loading/ui/Loading";
 import { usePrepareResponse } from "../../shared/usePrepareResponse";
 import { BeerPageUi } from "./ui/BeerPageUi";
+import { useParams } from "react-router";
 
 const BeerPage = () => {
   const [beerPageResponse, setBeerPageDataResponse] = useState(null);
 
-  const beerId = localStorage.getItem("beerId");
+  const beerId = useParams().id;
 
-  usePrepareResponse(setBeerPageDataResponse, "beerPage",beerId);
+  usePrepareResponse(setBeerPageDataResponse, "beerPage", beerId);
 
   const NOT_FOUND_ERROR_CODE = 404;
 

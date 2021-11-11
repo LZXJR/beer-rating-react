@@ -1,9 +1,7 @@
 import ratingStar from "./img/star.svg";
-import { setIdInLocalStorage } from "../lib/setIdInLocalStorage";
 import "./style.css";
 
-import PropTypes from 'prop-types';
-
+import PropTypes from "prop-types";
 
 export const RatingItemUI = ({
   place,
@@ -12,10 +10,10 @@ export const RatingItemUI = ({
   filtration,
   grade,
   fortress,
-  id
+  id,
 }) => {
   return (
-    <a className="rating_item" href="/beerPage" onClick={()=>setIdInLocalStorage(id)}>
+    <a className="rating_item" href={`/beerPage${id}/${name}`}>
       <div className="rating_item_inner place">{place}</div>
       <div className="rating_item_inner name">{name}</div>
       <div className="rating_item_inner color">{color}</div>
@@ -30,13 +28,12 @@ export const RatingItemUI = ({
   );
 };
 
-
-RatingItemUI.propTypes={
-  place:PropTypes.number.isRequired,
-  name:PropTypes.string,
-  color:PropTypes.string.isRequired,
-  filtration:PropTypes.string.isRequired,
-  grade:PropTypes.number.isRequired,
-  fortress:PropTypes.number.isRequired,
-  id:PropTypes.number.isRequired
-}
+RatingItemUI.propTypes = {
+  place: PropTypes.number.isRequired,
+  name: PropTypes.string,
+  color: PropTypes.string.isRequired,
+  filtration: PropTypes.string.isRequired,
+  grade: PropTypes.number.isRequired,
+  fortress: PropTypes.number.isRequired,
+  id: PropTypes.number.isRequired,
+};
