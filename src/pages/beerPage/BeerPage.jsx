@@ -3,12 +3,12 @@ import { Error404UI } from "../../shared/error404/ui/Error404UI";
 import { Loading } from "../../shared/loading/ui/Loading";
 import { usePrepareResponse } from "../../shared/usePrepareResponse";
 import { BeerPageUi } from "./ui/BeerPageUi";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 
 const BeerPage = () => {
   const [beerPageResponse, setBeerPageDataResponse] = useState(null);
 
-  const beerId = useParams().id;
+  const { id:beerId } = useParams();
 
   usePrepareResponse(setBeerPageDataResponse, "beerPage", beerId);
 

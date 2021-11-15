@@ -13,7 +13,7 @@ export const RatingItemUI = ({
   id,
 }) => {
   return (
-    <a className="rating_item" href={`/beerPage${id}/${name}`}>
+    <a className="rating_item" href={`/beerPage/${id}/${name}`}>
       <div className="rating_item_inner place">{place}</div>
       <div className="rating_item_inner name">{name}</div>
       <div className="rating_item_inner color">{color}</div>
