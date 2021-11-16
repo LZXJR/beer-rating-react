@@ -5,4 +5,9 @@
     border: 0;
     font-family: Roboto, sans-serif;
   }
+  @media (max-width: 600px) {
+    .global_filter_select {
+      font-size: 11px;
+    }
+  }
   

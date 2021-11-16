@@ -22,3 +22,8 @@
     font-size: 35px;
   }
 }
+@media (max-width: 501px){
+  .beerPage {
+    padding: 20px 0px;
+  }
+}

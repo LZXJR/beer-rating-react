@@ -1,0 +1,46 @@
+.error {
+  display: flex;
+  height: 87vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.error_item{
+    display: flex;
+    align-items: center;
+}
+
+.error_code {
+  font-size: 200px;
+  font-family: Lobster, sans-serif;
+  color: #ffffff;
+  font-weight: lighter;
+
+  margin-right: 20px;
+}
+
+.error_icon {
+  height: 200px;
+  width: 200px;
+}
+
+
+@media(max-width:550px){
+  .error_code {
+    font-size: 150px;
+  }
+  .error_icon {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media(max-width:425px){
+  .error_code {
+    font-size: 100px;
+  }
+  .error_icon {
+    height: 100px;
+    width: 100px;
+  }
+}

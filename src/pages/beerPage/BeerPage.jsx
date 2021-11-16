@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Error404UI } from "../../shared/error404/ui/Error404UI";
-import { Loading } from "../../shared/loading/ui/Loading";
+import { ErrorUI } from "../../shared/error/";
+import { Loading } from "../../shared/loading/";
 import { usePrepareResponse } from "../../shared/usePrepareResponse";
 import { BeerPageUi } from "./ui/BeerPageUi";
 import { useParams } from "react-router-dom";
@@ -18,7 +18,7 @@ const BeerPage = () => {
     if (beerPageResponse) {
       const [beerPageData] = beerPageResponse.data;
       return beerPageResponse.status === NOT_FOUND_ERROR_CODE ? (
-        <Error404UI />
+        <ErrorUI errorCode={beerPageResponse.status}/>
       ) : (
         <BeerPageUi beerPageData={beerPageData} />
       );

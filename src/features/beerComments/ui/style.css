@@ -69,12 +69,11 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .button_cancel,
   .button_comment {
     font-size: 10px;
   }
-
 }
 
 @media (max-width: 461px) {
@@ -95,4 +94,18 @@
   .user_comment_input {
     font-size: 10px;
   }
+}
+
+@media (max-width: 320px) {
+  .beerPage_comments {
+    padding: 40px 10px 20px 10px;
+  }
+
+  .beer_comment {
+    width: 100%;
+  }
+
+  .user_nickName, .user_comment {
+    font-size: 9px;
+}
 }

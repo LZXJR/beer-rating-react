@@ -15,6 +15,7 @@
 .rating_item_inner:last-child{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .rating_item:hover{

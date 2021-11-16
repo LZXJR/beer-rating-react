@@ -1,6 +1,7 @@
 .briefly_about_beer_item:nth-child(1) {
   width: 39.8%;
   padding: 40px 20px;
+  height: 608px;
 }
 
 .zoom_beer_photo {

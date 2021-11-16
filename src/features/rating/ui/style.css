@@ -32,11 +32,17 @@
 
 /* Media question */
 
+@media(max-width:600px){
+  .rating_title,.rating_item{
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 425px) {
   .rating_title_item:nth-of-type(4),.rating_item_inner:nth-of-type(4) {
     display: none;
   }
   .rating_title,.rating_item {
-    grid-template-columns: 1fr 4fr 3fr 3fr;
+    grid-template-columns: 1fr 4fr 3fr 2fr 3fr;
   }
 }

@@ -1,11 +1,12 @@
-
-export const reducer = (state ={}, action) => {
+export const reducer = (state = {}, action) => {
   if (action.type.includes("set")) {
-    const typeLength = action.type.length;
-    const typeKey = action.type.slice(4, typeLength) + "_grade";
-    return { ...state, [typeKey]: action.payload };
-  } else {
-    console.error("Action not found :(");
-    return state;
+   
+    const { type, payload } = action;
+    const set_Length = 4;
+    const typeKey = type.slice(set_Length, type.length) + "_grade";
+
+    return { ...state, [typeKey]: payload };
   }
+  action.type.includes('@@redux/INIT')?console.log("%cRedux init","color:blue"): console.error("Action not found :(");
+  return state;
 };
