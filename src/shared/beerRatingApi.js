@@ -3,12 +3,13 @@ import axios from "axios";
 const IP = "localhost";
 const PORT = 5000;
 
-const homePageUrl = `http://${IP}:${PORT}/`;
+const homePageUrl = `http://${IP}:${PORT}`;
 
 export const beerRatingApi = (path, id, method = "GET", data) => {
+
   switch (method) {
     case "GET":
-      const resultPath = id ? `${path}-${id}` : path;
+      const resultPath = id ? `${path}?id=${id}` : path;
       return axios.get(homePageUrl + resultPath).then((response) => response);
 
     case "POST":

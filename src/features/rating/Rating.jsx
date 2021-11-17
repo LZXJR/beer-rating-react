@@ -8,7 +8,7 @@ import PropsTypes from "prop-types";
 
 export const Rating = ({ choosedFilter }) => {
   const [ratingItemsResponse, setRatingItemsResponse] = useState(null);
-  usePrepareResponse(setRatingItemsResponse, `ratingItems-${choosedFilter}`);
+  usePrepareResponse(setRatingItemsResponse, `/ratingItems`,choosedFilter);
 
   return (
     <RatingUI>

@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 
 export const BeerPhotoUI = ({id}) => {
   const [beerPhoto, setBeerPhoto] = useState(null);
-  usePrepareResponse(setBeerPhoto, "beerPhoto", id);
+  usePrepareResponse(setBeerPhoto, "/beerPhoto", id);
 
   return (
     <div className="briefly_about_beer_item white_bg_and_border_radius">

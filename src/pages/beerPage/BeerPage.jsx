@@ -10,7 +10,7 @@ const BeerPage = () => {
 
   const { id:beerId } = useParams();
 
-  usePrepareResponse(setBeerPageDataResponse, "beerPage", beerId);
+  usePrepareResponse(setBeerPageDataResponse, "/beerPage", beerId);
 
   const NOT_FOUND_ERROR_CODE = 404;
 

@@ -46,7 +46,7 @@ export const BeerCharacteristics = ({ beerPageData }) => {
 
 
       setResultUserGradesData((prevState) => {
-        beerRatingApi("resultUserGrades", null, "POST", prevState);
+        beerRatingApi("/resultUserGrades", null, "POST", prevState);
         return prevState;
       });
       // !!!!
