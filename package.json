@@ -1,0 +1,26 @@
+{
+  "name": "beer-rating-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LZXJR/beer-rating.git"
+  },
+  "author": "LZXJR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LZXJR/beer-rating/issues"
+  },
+  "homepage": "https://github.com/LZXJR/beer-rating#readme"
+}
