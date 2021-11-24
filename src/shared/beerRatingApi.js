@@ -1,11 +1,11 @@
 import axios from "axios";
 
-// const IP = "localhost";
-// const PORT = 5000;
+const IP = "localhost";
+const PORT = 5000;
 
-// const homePageUrl = `http://${IP}:${PORT}`;
+const homePageUrl = `http://${IP}:${PORT}`;
 
-const homePageUrl = `https://beer-rating-api.herokuapp.com`;
+// const homePageUrl = `https://beer-rating-api.herokuapp.com`;
 
 
 export const beerRatingApi = (path, id, method = "GET", data) => {

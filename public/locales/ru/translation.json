@@ -1,11 +1,11 @@
 {
-  "nav": {
-    "navItemOne": "Кабинет",
-    "navItemTwo": "Случайное пиво",
-    "navItemThree": "О нас",
-    "navItemFour": "Поддержать проект"
+  "Nav": {
+    "itemOne": "Кабинет",
+    "itemTwo": "Случайное пиво",
+    "itemThree": "О нас",
+    "itemFour": "Поддержать проект"
   },
-  "ratingTitle": {
+  "RatingTitle": {
     "name": "Название",
     "color": "Цвет",
     "filtration": "Фильтрация",
@@ -47,7 +47,12 @@
     "decreaseInEstimate": "Падение по оценке",
     "growthIsEstimated": "Рост по оценке"
   },
-  "SumUpButton":"оценить",
-  "SumUpExplaining":"Для оценки, нужно изменить хотя бы одну шкалу, щелкнув по ней."
+
+  "SumUp":{
+    "button":"оценить",
+    "explaining": "*Для оценки, нужно изменить хотя бы одну шкалу, щелкнув по ней.",
+    "gratitude":"*Спасибо за вашу оценку. Теперь, наш рейтинг стал еще лучше!"
+  }
+
 
 }

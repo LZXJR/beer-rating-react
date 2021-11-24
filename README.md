@@ -6,4 +6,5 @@
 - JSX
 - Axios
 - CSS
-- Feature-Sliced
+
+## Methodology: feature-Sliced

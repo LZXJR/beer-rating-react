@@ -53,7 +53,7 @@ export const BeerCharacteristicsUI = ({
         characteristicGrade={alcohol_grade}
       />
       <button className="sumUp_button" onClick={() => sumUpBeer()}>
-        {t("SumUpButton")}
+        {t("SumUp.button")}
       </button>
 
       {children}

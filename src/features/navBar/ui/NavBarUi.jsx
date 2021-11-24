@@ -45,16 +45,16 @@ export const NavBarUi = ({
           <main className="navBar_main ">
             <ul>
               <li>
-                <a href="#">{t("nav.navItemOne")}</a>
+                <a href="#">{t("Nav.itemOne")}</a>
               </li>
               <li>
-                <a href="#">{t("nav.navItemTwo")}</a>
+                <a href="#">{t("Nav.itemTwo")}</a>
               </li>
               <li>
-                <a href="#">{t("nav.navItemThree")}</a>
+                <a href="#">{t("Nav.itemThree")}</a>
               </li>
               <li>
-                <a href="#">{t("nav.navItemFour")}</a>
+                <a href="#">{t("Nav.itemFour")}</a>
               </li>
             </ul>
 

@@ -1,11 +1,11 @@
 {
-  "nav": {
-    "navItemOne": "My cabinet",
-    "navItemTwo": "Random Beer",
-    "navItemThree": "About us",
-    "navItemFour": "Donate"
+  "Nav": {
+    "itemOne": "My cabinet",
+    "itemTwo": "Random Beer",
+    "itemThree": "About us",
+    "itemFour": "Donate"
   },
-  "ratingTitle": {
+  "RatingTitle": {
     "name": "Name",
     "color": "Color",
     "filtration": "Filtration",
@@ -46,7 +46,9 @@
     "decreaseInEstimate": "Decrease in estimate",
     "growthIsEstimated": "Growth is estimated"
   },
-  "SumUpButton":"sum up",
-  "SumUpExplaining":"To evaluate, you need to change, at least one scale by clicking on it"
-  
+  "SumUp":{
+    "button":"sum up",
+    "explaining": "*To evaluate, you need to change, at least one scale by clicking on it.",
+    "gratitude":"*Thank you for your evaluation. Now, our rating is even better!"
+  }
 }

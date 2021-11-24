@@ -1,11 +1,11 @@
 {
-  "nav": {
-    "navItemOne": "Кабінет",
-    "navItemTwo": "Випадкове пиво",
-    "navItemThree": "Про нас",
-    "navItemFour": "Підтримати проект"
+  "Nav": {
+    "itemOne": "Кабінет",
+    "itemTwo": "Випадкове пиво",
+    "itemThree": "Про нас",
+    "itemFour": "Підтримати проект"
   },
-  "ratingTitle": {
+  "RatingTitle": {
     "name": "Назва",
     "color": "Колір",
     "filtration": "Фільтрація",
@@ -47,6 +47,10 @@
     "decreaseInEstimate": "Спадання по оцінці",
     "growthIsEstimated": "Ріст по оцінці"
   },
-  "SumUpButton": "оцінити",
-  "SumUpExplaining": "Щоб оцінити, потрібно змінити хоча б одну шкалу, натиснувши на неї"
+
+"SumUp":{
+  "button":"оцінити",
+  "explaining": "*Щоб оцінити, потрібно змінити хоча б одну шкалу, натиснувши на неї",
+  "gratitude":"*Дякуємо за вашу оцінку. Тепер, наш рейтинг став ще краще !"
+}
 }
